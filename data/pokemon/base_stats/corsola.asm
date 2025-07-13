@@ -1,6 +1,6 @@
 	db CORSOLA ; 222
 
-	db  60,  75, 105,  35, 115, 105
+	db  90,  75, 105,  35, 95, 105
 	;   hp  atk  def  spd  sat  sdf
 
 	db ICE, ICE ; type
