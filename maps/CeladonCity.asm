@@ -118,8 +118,7 @@ CeladonCityGen1Tutor2Script:
 	closewindow
 	ifequal $1, .Counter
 	ifequal $2, .SeismicToss
-	ifequal $3, .Fissure
-	ifequal $4, .Reflect
+	ifequal $3, .Reflect
 	sjump .TutorRefused2
 	
 .Counter:
@@ -131,13 +130,6 @@ CeladonCityGen1Tutor2Script:
 
 .SeismicToss:
 	writebyte SEISMIC_TOSS
-	writetext CeladonCityGen1TutorClear
-	special MoveTutor
-	ifequal FALSE, .TeachMove2
-	sjump .TutorRefused2
-
-.Fissure:
-	writebyte FISSURE
 	writetext CeladonCityGen1TutorClear
 	special MoveTutor
 	ifequal FALSE, .TeachMove2
@@ -161,7 +153,6 @@ CeladonCityGen1Tutor2Script:
 	db 5 ; items
 	db "COUNTER@"
 	db "SEISMIC TOSS@"
-	db "FISSURE@"
 	db "REFLECT@"
 	db "CANCEL@"
 	
