@@ -511,6 +511,7 @@ VulpixEvosAttacks:
 	db 1, EMBER
 	db 1, TAIL_WHIP
 	db 7, QUICK_ATTACK
+	db 12, WILL_O_WISP
 	db 13, ROAR
 	db 19, CONFUSE_RAY
 	db 25, FLAME_WHEEL
@@ -1368,7 +1369,7 @@ KrabbyEvosAttacks:
 	db 12, HARDEN
 	db 16, BUBBLEBEAM
 	db 23, VICEGRIP
-	db 27, GUILLOTINE
+	; db 27, GUILLOTINE
 	db 34, SWORDS_DANCE
 	db 40, CRABHAMMER
 	db 48, BIND
@@ -1382,7 +1383,7 @@ KinglerEvosAttacks:
 	db 12, HARDEN
 	db 16, BUBBLEBEAM
 	db 23, VICEGRIP
-	db 27, GUILLOTINE
+	; db 27, GUILLOTINE
 	db 36, SWORDS_DANCE
 	db 42, CRABHAMMER
 	db 52, BIND
@@ -1791,7 +1792,7 @@ PinsirEvosAttacks:
 	db 13, FURY_CUTTER
 	db 19, SEISMIC_TOSS
 	db 25, VICEGRIP
-	db 31, GUILLOTINE
+	; db 31, GUILLOTINE
 	db 37, SUBMISSION
 	db 43, SWORDS_DANCE
 	db 55, MEGAHORN
@@ -2909,7 +2910,7 @@ GligarEvosAttacks:
 	db 41, RAZOR_WIND
 	db 48, SCREECH
 	db 55, EARTHQUAKE
-	db 62, GUILLOTINE
+	; db 62, GUILLOTINE
 	db 0 ; no more level-up moves
 
 SteelixEvosAttacks:
