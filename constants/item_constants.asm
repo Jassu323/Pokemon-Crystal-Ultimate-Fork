@@ -337,7 +337,7 @@ ENDM
 	add_mt SUBMISSION
 	add_mt COUNTER
 	add_mt SEISMIC_TOSS
-	add_mt FISSURE
+	; add_mt FISSURE
 	add_mt REFLECT
 	add_mt THUNDER_WAVE
 	add_mt EXPLOSION

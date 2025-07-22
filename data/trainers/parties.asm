@@ -222,7 +222,7 @@ JasmineGroup:
 			db $cc, $cc ; atk|def, spd|spc
 			dw $E02E, $E02E, $E02E, $E02E, $E02E
 			db BERRY_JUICE
-			db BIND, FISSURE, EARTHQUAKE, IRON_TAIL
+			db BIND, EARTHQUAKE, IRON_TAIL ; FISSURE
 	db -1 ; end
 
 ChuckGroup:
@@ -695,7 +695,7 @@ BrunoGroup:
 			db $bb, $bb ; atk|def, spd|spc
 			dw $3075, $3075, $3075, $3075, $3075
 			db HARD_STONE
-			db BIND, EARTHQUAKE, IRON_TAIL, FISSURE
+			db BIND, EARTHQUAKE, IRON_TAIL, ; FISSURE
 	db 66, PRIMEAPE
 			db $bb, $bb ; atk|def, spd|spc
 			dw $3075, $3075, $3075, $3075, $3075
@@ -5001,7 +5001,7 @@ HikerGroup:
 			db EARTHQUAKE, IRON_TAIL, ROCK_SLIDE, SANDSTORM
 	db 70, DUGTRIO
 			dw $3075, $3075, $3075, $3075, $3075
-			db EARTHQUAKE, FISSURE, SLUDGE_BOMB, ROCK_SLIDE
+			db EARTHQUAKE, SLUDGE_BOMB, ROCK_SLIDE ; FISSURE
 	db 70, PILOSWINE
 			dw $3075, $3075, $3075, $3075, $3075
 			db EARTHQUAKE, BLIZZARD, REST, SLEEP_TALK
@@ -5079,7 +5079,7 @@ HikerGroup:
 			db EARTHQUAKE, SWORDS_DANCE, CUT, ROCK_SLIDE
 	db 75, STEELIX
 			dw $D084, $D084, $D084, $D084, $D084
-			db EARTHQUAKE, IRON_TAIL, FISSURE, BIND
+			db EARTHQUAKE, IRON_TAIL, BIND ; FISSURE
 	db -1 ; end
 
 	; HIKER (16)
@@ -7646,7 +7646,7 @@ GiovanniGroup:
 			db PERFECT_DV, $fb ; atk|def, spd|spc
 			dw $C8AF, $C8AF, $C8AF, $C8AF, $C8AF
 			db POLKADOT_BOW
-			db MEGA_PUNCH, EARTHQUAKE, STRENGTH, FISSURE
+			db MEGA_PUNCH, EARTHQUAKE, STRENGTH, ; FISSURE
 	db 84, NIDOKING
 			db PERFECT_DV, $fb ; atk|def, spd|spc
 			dw $C8AF, $C8AF, $C8AF, $C8AF, $C8AF
