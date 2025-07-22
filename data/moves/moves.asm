@@ -94,7 +94,7 @@ Moves:
 	move PETAL_DANCE,  EFFECT_RAMPAGE,           120, GRASS,        100, 10,   0
 	move STRING_SHOT,  EFFECT_SPEED_DOWN_2,        0, BUG,           95, 40,   0
 	move DRAGON_RAGE,  EFFECT_BURN_HIT,           60, DRAGON,       100, 10,  30
-	move FIRE_SPIN,    EFFECT_BURN,                0, FIRE,          85, 15,   0
+	move FIRE_SPIN,    EFFECT_TRAP_TARGET,        35, FIRE,          90, 15,   0
 	move THUNDERSHOCK, EFFECT_PARALYZE_HIT,       40, ELECTRIC,     100, 30,  10
 	move THUNDERBOLT,  EFFECT_PARALYZE_HIT,       95, ELECTRIC,     100, 15,  10
 	move THUNDER_WAVE, EFFECT_PARALYZE,            0, ELECTRIC,      90, 20,   0
