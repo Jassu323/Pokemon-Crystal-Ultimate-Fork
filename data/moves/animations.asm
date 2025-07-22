@@ -12,7 +12,7 @@ BattleAnimations::
 	dw BattleAnim_Thunderpunch
 	dw BattleAnim_Scratch
 	dw BattleAnim_Vicegrip
-	dw BattleAnim_Guillotine
+	dw BattleAnim_WillOWisp
 	dw BattleAnim_RazorWind
 	dw BattleAnim_SwordsDance
 	dw BattleAnim_Cut
@@ -2497,19 +2497,31 @@ BattleAnim_DrillPeck:
 	anim_wait 16
 	anim_ret
 
-BattleAnim_Guillotine:
-	anim_1gfx ANIM_GFX_CUT
-	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $10
-	anim_bgeffect ANIM_BG_1F, $40, $2, $0
-	anim_sound 0, 1, SFX_VICEGRIP
-	anim_obj ANIM_OBJ_37, 156, 44, $0
-	anim_obj ANIM_OBJ_37, 152, 40, $0
-	anim_obj ANIM_OBJ_37, 148, 36, $0
-	anim_obj ANIM_OBJ_39, 124, 76, $0
-	anim_obj ANIM_OBJ_39, 120, 72, $0
-	anim_obj ANIM_OBJ_39, 116, 68, $0
-	anim_obj ANIM_OBJ_39, 120, 72, $0
-	anim_wait 32
+BattleAnim_WillOWisp:
+	anim_1gfx ANIM_GFX_FIRE
+.loop1
+	anim_bgp $1b
+	anim_sound 6, 2, SFX_EMBER
+	anim_obj ANIM_OBJ_FIRE_SPIN, 64, 88, $4
+	anim_wait 2
+	anim_sound 6, 2, SFX_EMBER
+	anim_obj ANIM_OBJ_FIRE_SPIN, 64, 96, $3
+	anim_wait 2
+	anim_sound 6, 2, SFX_EMBER
+	anim_obj ANIM_OBJ_FIRE_SPIN, 64, 88, $3
+	anim_wait 2
+	anim_sound 6, 2, SFX_EMBER
+	anim_obj ANIM_OBJ_FIRE_SPIN, 64, 96, $4
+	anim_wait 2
+	anim_loop 2, .loop1
+	anim_wait 120
+.loop2
+	anim_sound 0, 0, SFX_BURN
+	anim_obj ANIM_OBJ_BURNED, 136, 56, $10
+	anim_obj ANIM_OBJ_BURNED, 136, 56, $90
+	anim_wait 4
+	anim_loop 3, .loop2
+	anim_wait 6
 	anim_ret
 
 BattleAnim_Flash:

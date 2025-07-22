@@ -11,7 +11,7 @@ MoveDescriptions::
 	dw ThunderpunchDescription
 	dw ScratchDescription
 	dw VicegripDescription
-	dw GuillotineDescription
+	dw WillOWispDescription
 	dw RazorWindDescription
 	dw SwordsDanceDescription
 	dw CutDescription
@@ -308,9 +308,9 @@ VicegripDescription:
 	db   "Pincer attack that"
 	next "often flinches.@"
 
-GuillotineDescription:
-	db   "A one-hit KO,"
-	next "pincer attack.@"
+WillOWispDescription:
+	db   "Move that will"
+	next "burn the foe.@"
 
 RazorWindDescription:
 	db   "Attack that often"
@@ -593,8 +593,8 @@ DragonRageDescription:
 	next "causes a burn.@"
 
 FireSpinDescription:
-	db   "A move that may"
-	next "cause a burn.@"
+	db   "Traps the foe"
+	next "for 2-5 turns.@"
 
 ThundershockDescription:
 	db   "An attack that may"
