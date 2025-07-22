@@ -90,7 +90,7 @@ BattleAnimations::
 	dw BattleAnim_Thunder
 	dw BattleAnim_RockThrow
 	dw BattleAnim_Earthquake
-	dw BattleAnim_Fissure
+	dw BattleAnim_LavaPlume
 	dw BattleAnim_Dig
 	dw BattleAnim_Toxic
 	dw BattleAnim_Confusion
@@ -1820,13 +1820,21 @@ BattleAnim_Earthquake:
 	anim_loop 4, .loop
 	anim_ret
 
-BattleAnim_Fissure:
-	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $40
-	anim_bgeffect ANIM_BG_1F, $60, $4, $0
-.loop
+BattleAnim_LavaPlume:
+	anim_1gfx ANIM_GFX_FIRE
+.loop1
+	anim_sound 0, 0, SFX_EMBER
+	anim_obj ANIM_OBJ_FLAME_WHEEL, 48, 96, $0
+	anim_wait 6
+	anim_loop 8, .loop1
+	anim_wait 12
+	anim_bgeffect ANIM_BG_1F, $20, $2, $0
+.loop2
 	anim_sound 0, 1, SFX_EMBER
-	anim_wait 24
-	anim_loop 4, .loop
+	anim_obj ANIM_OBJ_FIRE_BLAST, 48, 92, $1
+	anim_wait 16
+	anim_loop 5, .loop2
+	anim_wait 84
 	anim_ret
 
 BattleAnim_Growl:

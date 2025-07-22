@@ -89,7 +89,7 @@ MoveDescriptions::
 	dw ThunderDescription
 	dw RockThrowDescription
 	dw EarthquakeDescription
-	dw FissureDescription
+	dw LavaPlumeDescription
 	dw DigDescription
 	dw ToxicDescription
 	dw ConfusionDescription
@@ -620,9 +620,9 @@ EarthquakeDescription:
 	db   "Tough but useless"
 	next "vs. flying foes.@"
 
-FissureDescription:
-	db   "A ground-type,"
-	next "one-hit KO attack.@"
+LavaPlumeDescription:
+	db   "An attack with a"
+	next "high rate of burn.@"
 
 DigDescription:
 	db   "1st turn: Burrow"

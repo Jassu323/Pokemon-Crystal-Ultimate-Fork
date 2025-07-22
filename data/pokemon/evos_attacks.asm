@@ -699,7 +699,7 @@ DiglettEvosAttacks:
 	db 33, SLASH
 	db 41, EARTHQUAKE
 	db 45, BEAT_UP
-	db 49, FISSURE
+	; db 49, FISSURE
 	db 57, SWORDS_DANCE
 	db 0 ; no more level-up moves
 
@@ -714,7 +714,7 @@ DugtrioEvosAttacks:
 	db 35, SLASH
 	db 45, EARTHQUAKE
 	db 50, BEAT_UP
-	db 55, FISSURE
+	; db 55, FISSURE
 	db 60, SWORDS_DANCE
 	db 0 ; no more level-up moves
 
