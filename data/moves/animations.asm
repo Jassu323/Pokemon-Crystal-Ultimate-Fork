@@ -897,6 +897,7 @@ BattleAnim_FireSpin:
 	anim_wait 6
 	anim_loop 8, .loop2
 	anim_wait 120
+	anim_ret
 
 BattleAnim_DragonRage:
 	anim_1gfx ANIM_GFX_FIRE
