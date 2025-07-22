@@ -876,7 +876,7 @@ BattleAnim_FirePunch:
 
 BattleAnim_FireSpin:
 	anim_1gfx ANIM_GFX_FIRE
-.loop
+.loop1
 	anim_sound 6, 2, SFX_EMBER
 	anim_obj ANIM_OBJ_FIRE_SPIN, 64, 88, $4
 	anim_wait 2
@@ -889,9 +889,14 @@ BattleAnim_FireSpin:
 	anim_sound 6, 2, SFX_EMBER
 	anim_obj ANIM_OBJ_FIRE_SPIN, 64, 96, $4
 	anim_wait 2
-	anim_loop 2, .loop
+	anim_loop 2, .loop1
 	anim_wait 96
-	anim_ret
+.loop2
+	anim_sound 0, 0, SFX_EMBER
+	anim_obj ANIM_OBJ_FLAME_WHEEL, 132, 64, $0
+	anim_wait 6
+	anim_loop 8, .loop2
+	anim_wait 120
 
 BattleAnim_DragonRage:
 	anim_1gfx ANIM_GFX_FIRE
