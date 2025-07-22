@@ -309,7 +309,7 @@ VicegripDescription:
 	next "often flinches.@"
 
 WillOWispDescription:
-	db   "Move that will"
+	db   "A move that will"
 	next "burn the foe.@"
 
 RazorWindDescription:
