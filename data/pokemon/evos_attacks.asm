@@ -511,7 +511,6 @@ VulpixEvosAttacks:
 	db 1, EMBER
 	db 1, TAIL_WHIP
 	db 7, QUICK_ATTACK
-	db 12, WILL_O_WISP
 	db 13, ROAR
 	db 19, CONFUSE_RAY
 	db 25, FLAME_WHEEL

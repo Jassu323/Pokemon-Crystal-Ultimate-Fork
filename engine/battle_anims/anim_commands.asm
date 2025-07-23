@@ -416,7 +416,6 @@ BattleAnimCommands::
 	dw BattleAnimCmd_OAMOn
 	dw BattleAnimCmd_OAMOff
 	dw BattleAnimCmd_ClearObjs
-	dw BattleAnimCmd_BeatUp
 	dw BattleAnimCmd_E7
 	dw BattleAnimCmd_UpdateActorPic
 	dw BattleAnimCmd_Minimize
@@ -1179,44 +1178,6 @@ BattleAnimCmd_DropSub:
 .done
 	pop af
 	ld [wCurPartySpecies], a
-
-	pop af
-	ldh [rSVBK], a
-	ret
-
-BattleAnimCmd_BeatUp:
-	ldh a, [rSVBK]
-	push af
-	ld a, BANK(wCurPartySpecies)
-	ldh [rSVBK], a
-
-	ld a, [wCurPartySpecies]
-	push af
-
-	ld a, [wBattleAnimParam]
-	ld [wCurPartySpecies], a
-
-	ldh a, [hBattleTurn]
-	and a
-	jr z, .player
-
-	ld hl, wBattleMonDVs
-	predef GetUnownLetter
-	ld de, vTiles2 tile $00
-	predef GetMonFrontpic
-	jr .done
-
-.player
-	ld hl, wEnemyMonDVs
-	predef GetUnownLetter
-	ld de, vTiles2 tile $31
-	predef GetMonBackpic
-
-.done
-	pop af
-	ld [wCurPartySpecies], a
-	ld b, SCGB_BATTLE_COLORS
-	call GetSGBLayout
 
 	pop af
 	ldh [rSVBK], a

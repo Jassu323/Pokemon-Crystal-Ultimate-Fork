@@ -2620,6 +2620,11 @@ PlayerAttackDamage:
 	ld d, a
 	ret z
 
+	ld a, BATTLE_VARS_MOVE_EFFECT
+	call GetBattleVar
+	cp EFFECT_BEAT_UP
+	jr z, .physical
+
 	ld a, [hl]
 	cp SPECIAL
 	jr nc, .special
@@ -2875,6 +2880,11 @@ EnemyAttackDamage:
 	ld d, a
 	and a
 	ret z
+
+	ld a, BATTLE_VARS_MOVE_EFFECT
+	call GetBattleVar
+	cp EFFECT_BEAT_UP
+	jr z, .physical
 
 	ld a, [hl]
 	cp SPECIAL
