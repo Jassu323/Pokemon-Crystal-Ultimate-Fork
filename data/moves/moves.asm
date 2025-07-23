@@ -253,7 +253,7 @@ Moves:
 	move TWISTER,      EFFECT_ALWAYS_HIT,         55, DRAGON,       100, 20,   0
 	move RAIN_DANCE,   EFFECT_RAIN_DANCE,          0, WATER,         90,  5,   0
 	move SUNNY_DAY,    EFFECT_SUNNY_DAY,           0, FIRE,          90,  5,   0
-	move CRUNCH,       EFFECT_SP_DEF_DOWN_HIT,    90, DARK,         100, 15,  20
+	move CRUNCH,       EFFECT_SP_DEF_DOWN_HIT,    90, DARK,         100, 15,  10
 	move MIRROR_COAT,  EFFECT_MIRROR_COAT,         1, PSYCHIC_TYPE, 100, 20,   0
 	move PSYCH_UP,     EFFECT_PSYCH_UP,            0, PSYCHIC_TYPE, 100, 20,   0
 	move EXTREMESPEED, EFFECT_PRIORITY_HIT,       80, NORMAL,       100,  5,   0
@@ -262,4 +262,4 @@ Moves:
 	move FUTURE_SIGHT, EFFECT_FUTURE_SIGHT,      150, PSYCHIC_TYPE, 100, 10,   0
 	move ROCK_SMASH,   EFFECT_DEFENSE_DOWN_HIT,   40, FIGHTING,     100, 10, 100
 	move WHIRLPOOL,    EFFECT_PRIORITY_HIT,       50, WATER,        100, 10,   0
-	move BEAT_UP,      EFFECT_MULTI_HIT,          27, DARK,          95, 10,   0
+	move BEAT_UP,      EFFECT_BEAT_UP,            80, DARK,         100, 15,  20

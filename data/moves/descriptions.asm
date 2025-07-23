@@ -1265,5 +1265,5 @@ WhirlpoolDescription:
 	next "in the first hit.@"
 
 BeatUpDescription:
-	db   "Brutalizes foe"
-	next "2-5 times.@"
+	db   "A brutalizing"
+	next "physical attack.@"

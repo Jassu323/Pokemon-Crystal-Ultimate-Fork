@@ -160,3 +160,4 @@ MoveEffectsPointers:
 	dw GrassPowderParalyze
 	dw RockSlide
 	dw NightShade
+	dw BeatUp

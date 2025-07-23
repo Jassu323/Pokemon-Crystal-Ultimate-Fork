@@ -251,7 +251,7 @@ BattleAnimations::
 	dw BattleAnim_FutureSight
 	dw BattleAnim_RockSmash
 	dw BattleAnim_Whirlpool
-	dw BattleAnim_MegaPunch
+	dw BattleAnim_BeatUp
 	dw BattleAnim_252
 	dw BattleAnim_253
 	dw BattleAnim_254
@@ -4588,24 +4588,34 @@ BattleAnim_Whirlpool:
 	anim_ret
 
 BattleAnim_BeatUp:
-	anim_if_param_equal $0, .current_mon
-	anim_sound 0, 0, SFX_BALL_POOF
-	anim_bgeffect ANIM_BG_RETURN_MON, $0, $1, $0
-	anim_wait 16
-	anim_beatup
-	anim_sound 0, 0, SFX_BALL_POOF
-	anim_bgeffect ANIM_BG_ENTER_MON, $0, $1, $0
-	anim_wait 16
-.current_mon
-	anim_1gfx ANIM_GFX_HIT
-	anim_call BattleAnim_TargetObj_1Row
-	anim_bgeffect ANIM_BG_TACKLE, $0, $1, $0
-	anim_wait 4
-	anim_sound 0, 1, SFX_BEAT_UP
-	anim_obj ANIM_OBJ_00, 136, 48, $0
-	anim_wait 8
-	anim_call BattleAnim_ShowMon_0
-	anim_ret
+    anim_1gfx ANIM_GFX_HIT
+    anim_sound 0, 1, SFX_DOUBLE_KICK
+    anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $24
+    anim_obj ANIM_OBJ_06, 144, 48, $0
+    anim_wait 6
+    anim_obj ANIM_OBJ_01, 144, 48, $0
+    anim_wait 8
+    anim_sound 0, 1, SFX_DOUBLE_KICK
+    anim_obj ANIM_OBJ_06, 120, 52, $0
+    anim_wait 3
+    anim_obj ANIM_OBJ_01, 120, 52, $0
+    anim_wait 8
+    anim_sound 0, 1, SFX_DOUBLE_KICK
+    anim_obj ANIM_OBJ_06, 144, 56, $0
+    anim_wait 3
+    anim_obj ANIM_OBJ_01, 144, 56, $0
+    anim_wait 8
+    anim_sound 0, 1, SFX_DOUBLE_KICK
+    anim_obj ANIM_OBJ_06, 120, 60, $0
+    anim_wait 3
+    anim_obj ANIM_OBJ_01, 120, 60, $0
+    anim_wait 8
+    anim_sound 0, 1, SFX_DOUBLE_KICK
+    anim_obj ANIM_OBJ_06, 144, 64, $0
+    anim_wait 3
+    anim_obj ANIM_OBJ_01, 144, 64, $0
+    anim_wait 12
+    anim_ret
 
 BattleAnimSub_Drain:
 	anim_obj ANIM_OBJ_71, 132, 44, $0
