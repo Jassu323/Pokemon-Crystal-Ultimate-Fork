@@ -43,7 +43,7 @@ Moves:
 	move HEADBUTT,     EFFECT_FLINCH_HIT,         70, NORMAL,       100, 15,  30
 	move HORN_ATTACK,  EFFECT_POISON_HIT,         65, POISON,       100, 25,  10
 	move FURY_ATTACK,  EFFECT_MULTI_HIT,          15, NORMAL,        95, 15,   0
-	move HORN_DRILL,   EFFECT_OHKO,                1, NORMAL,        30,  5,   0
+	move WATER_PULSE,  EFFECT_CONFUSE_HIT,        60, WATER,        100, 20,  20
 	move TACKLE,       EFFECT_NORMAL_HIT,         40, NORMAL,       100, 35,   0
 	move BODY_SLAM,    EFFECT_PARALYZE_HIT,       85, NORMAL,       100, 15,  30
 	move WRAP,         EFFECT_TRAP_TARGET,        15, NORMAL,        85, 20,   0
@@ -72,7 +72,7 @@ Moves:
 	move ICE_BEAM,     EFFECT_FREEZE_HIT,         95, ICE,          100, 10,  10
 	move BLIZZARD,     EFFECT_FREEZE_HIT,        120, ICE,           80,  5,  10
 	move PSYBEAM,      EFFECT_CONFUSE_HIT,        65, PSYCHIC_TYPE, 100, 15,  30
-	move BUBBLEBEAM,   EFFECT_SPEED_DOWN_HIT,     65, WATER,        100, 15,  30
+	move BUBBLEBEAM,   EFFECT_SPEED_DOWN_HIT,     75, WATER,        100, 15,  10
 	move AURORA_BEAM,  EFFECT_ATTACK_DOWN_HIT,    65, ICE,          100, 15,  30
 	move HYPER_BEAM,   EFFECT_HYPER_BEAM,        180, NORMAL,        90,  5,   0
 	move PECK,         EFFECT_NORMAL_HIT,         40, FLYING,       100, 30,   0

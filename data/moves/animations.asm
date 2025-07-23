@@ -32,7 +32,7 @@ BattleAnimations::
 	dw BattleAnim_Headbutt
 	dw BattleAnim_HornAttack
 	dw BattleAnim_FuryAttack
-	dw BattleAnim_HornDrill
+	dw BattleAnim_WaterPulse
 	dw BattleAnim_Tackle
 	dw BattleAnim_BodySlam
 	dw BattleAnim_Wrap
@@ -2264,26 +2264,32 @@ BattleAnim_FuryAttack:
 	anim_wait 8
 	anim_ret
 
-BattleAnim_HornDrill:
-	anim_2gfx ANIM_GFX_HORN, ANIM_GFX_HIT
-	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $40
-	anim_obj ANIM_OBJ_HORN, 72, 80, $3
-	anim_wait 8
+BattleAnim_WaterPulse:
+    anim_bgeffect ANIM_BG_30, $0, $0, $0
+    anim_1gfx ANIM_GFX_PSYCHIC
+    anim_call BattleAnim_UserObj_2Row
 .loop
-	anim_sound 0, 1, SFX_HORN_ATTACK
-	anim_obj ANIM_OBJ_00, 132, 40, $0
-	anim_wait 8
-	anim_sound 0, 1, SFX_HORN_ATTACK
-	anim_obj ANIM_OBJ_00, 140, 48, $0
-	anim_wait 8
-	anim_sound 0, 1, SFX_HORN_ATTACK
-	anim_obj ANIM_OBJ_00, 132, 56, $0
-	anim_wait 8
-	anim_sound 0, 1, SFX_HORN_ATTACK
-	anim_obj ANIM_OBJ_00, 124, 48, $0
-	anim_wait 8
-	anim_loop 3, .loop
-	anim_ret
+    anim_sound 6, 2, SFX_BUBBLEBEAM
+    anim_obj ANIM_OBJ_WAVE, 64, 80, $2
+    anim_wait 8
+    anim_bgeffect ANIM_BG_31, $1c, $0, $0
+    anim_sound 6, 2, SFX_BUBBLEBEAM
+    anim_obj ANIM_OBJ_WAVE, 64, 88, $3
+    anim_wait 8
+    anim_bgeffect ANIM_BG_31, $8, $0, $0
+    anim_wait 16
+    anim_bgeffect ANIM_BG_31, $30, $0, $0
+    anim_sound 6, 2, SFX_BUBBLEBEAM
+    anim_obj ANIM_OBJ_WAVE, 64, 96, $4
+    anim_wait 8
+    anim_bgeffect ANIM_BG_SHOW_MON, $0, $1, $0
+    anim_wait 4
+    anim_loop 3, .loop
+    anim_wait 32
+    anim_call BattleAnim_ShowMon_1
+    anim_bgeffect ANIM_BG_32, $0, $0, $0
+    anim_wait 4
+    anim_ret
 
 BattleAnim_PoisonSting:
 	anim_2gfx ANIM_GFX_HORN, ANIM_GFX_HIT

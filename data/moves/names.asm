@@ -30,7 +30,7 @@ MoveNames::
 	db "HEADBUTT@"
 	db "HORN ATTACK@"
 	db "FURY ATTACK@"
-	db "HORN DRILL@"
+	db "WATER PULSE@"
 	db "TACKLE@"
 	db "BODY SLAM@"
 	db "WRAP@"

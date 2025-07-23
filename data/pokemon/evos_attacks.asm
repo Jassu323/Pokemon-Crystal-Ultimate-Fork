@@ -452,7 +452,7 @@ NidoranMEvosAttacks:
 	db 17, HORN_ATTACK
 	db 23, LOVELY_KISS
 	db 30, FURY_ATTACK
-	db 38, HORN_DRILL
+	; db 38, HORN_DRILL
 	db 0 ; no more level-up moves
 
 NidorinoEvosAttacks:
@@ -465,7 +465,7 @@ NidorinoEvosAttacks:
 	db 19, HORN_ATTACK
 	db 27, LOVELY_KISS
 	db 36, FURY_ATTACK
-	db 46, HORN_DRILL
+	; db 46, HORN_DRILL
 	db 0 ; no more level-up moves
 
 NidokingEvosAttacks:
@@ -475,7 +475,7 @@ NidokingEvosAttacks:
 	db 1, DOUBLE_KICK
 	db 1, LOVELY_KISS
 	db 43, THRASH
-	db 52, HORN_DRILL
+	; db 52, HORN_DRILL
 	db 0 ; no more level-up moves
 
 ClefairyEvosAttacks:
@@ -1085,7 +1085,7 @@ RapidashEvosAttacks:
 	db 19, STOMP
 	db 26, FIRE_SPIN
 	db 34, TAKE_DOWN
-	db 40, HORN_DRILL
+	; db 40, HORN_DRILL
 	db 47, MEGAHORN
 	db 57, FIRE_BLAST
 	db 67, EXTREMESPEED
@@ -1215,7 +1215,7 @@ DewgongEvosAttacks:
 	db 16, AURORA_BEAM
 	db 21, REST
 	db 32, TAKE_DOWN
-	db 32, HORN_DRILL
+	; db 32, HORN_DRILL
 	db 43, ICE_BEAM
 	db 49, SAFEGUARD
 	db 54, MEGAHORN
@@ -1553,7 +1553,7 @@ RhyhornEvosAttacks:
 	db 13, STOMP
 	db 19, MAGNITUDE
 	db 25, SCARY_FACE
-	db 31, HORN_DRILL
+	; db 31, HORN_DRILL
 	db 37, ROCK_SLIDE
 	db 49, EARTHQUAKE
 	db 55, MEGAHORN
@@ -1566,7 +1566,7 @@ RhydonEvosAttacks:
 	db 13, STOMP
 	db 19, MAGNITUDE
 	db 25, SCARY_FACE
-	db 31, HORN_DRILL
+	; db 31, HORN_DRILL
 	db 37, ROCK_SLIDE
 	db 51, EARTHQUAKE
 	db 61, MEGAHORN
@@ -1805,7 +1805,7 @@ TaurosEvosAttacks:
 	db 13, HORN_ATTACK
 	db 19, SCARY_FACE
 	db 26, STOMP
-	db 34, HORN_DRILL
+	; db 34, HORN_DRILL
 	db 43, THRASH
 	db 53, TAKE_DOWN
 	db 64, MEGAHORN
