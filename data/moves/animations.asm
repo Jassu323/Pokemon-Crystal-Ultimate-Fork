@@ -2960,26 +2960,31 @@ BattleAnim_Barrier:
 	anim_ret
 
 BattleAnim_Waterfall:
-	anim_1gfx ANIM_GFX_HIT
-	anim_call BattleAnim_TargetObj_2Row
-	anim_bgeffect ANIM_BG_25, $0, $1, $0
-	anim_wait 16
-	anim_call BattleAnim_ShowMon_0
-	anim_sound 0, 1, SFX_LICK
+	anim_2gfx ANIM_GFX_WATER, ANIM_GFX_HIT
+	anim_sound 0, 1, SFX_HYDRO_PUMP
+	anim_bgeffect ANIM_BG_WHIRLPOOL, $0, $0, $0
+	anim_wait 36
+	anim_obj ANIM_OBJ_HYDRO_PUMP, 124, 72, $0
+	anim_obj ANIM_OBJ_HYDRO_PUMP, 132, 72, $0
+	anim_obj ANIM_OBJ_HYDRO_PUMP, 140, 72, $0
+	anim_wait 8
+	anim_sound 0, 1, SFX_DOUBLE_KICK
+	anim_obj ANIM_OBJ_01, 136, 64, $0
+	anim_wait 3
+	anim_sound 0, 1, SFX_DOUBLE_KICK
 	anim_obj ANIM_OBJ_01, 136, 56, $0
 	anim_wait 3
-	anim_sound 0, 1, SFX_LICK
+	anim_sound 0, 1, SFX_DOUBLE_KICK
 	anim_obj ANIM_OBJ_01, 136, 48, $0
 	anim_wait 3
-	anim_sound 0, 1, SFX_LICK
+	anim_sound 0, 1, SFX_DOUBLE_KICK
 	anim_obj ANIM_OBJ_01, 136, 40, $0
 	anim_wait 3
-	anim_sound 0, 1, SFX_LICK
+	anim_sound 0, 1, SFX_DOUBLE_KICK
 	anim_obj ANIM_OBJ_01, 136, 32, $0
-	anim_wait 3
-	anim_sound 0, 1, SFX_LICK
-	anim_obj ANIM_OBJ_01, 136, 24, $0
 	anim_wait 8
+	anim_incbgeffect ANIM_BG_WHIRLPOOL
+	anim_wait 12
 	anim_ret
 
 BattleAnim_PsychicM:
