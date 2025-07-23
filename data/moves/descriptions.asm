@@ -31,7 +31,7 @@ MoveDescriptions::
 	dw HeadbuttDescription
 	dw HornAttackDescription
 	dw FuryAttackDescription
-	dw HornDrillDescription
+	dw WaterPulseDescription
 	dw TackleDescription
 	dw BodySlamDescription
 	dw WrapDescription
@@ -388,9 +388,9 @@ FuryAttackDescription:
 	db   "Jabs the target"
 	next "2-5 times.@"
 
-HornDrillDescription:
-	db   "A one-hit KO,"
-	next "drill attack.@"
+WaterPulseDescription:
+	db   "A watery blast;"
+	next "may cause confusion.@"
 
 TackleDescription:
 	db   "A full-body charge"
