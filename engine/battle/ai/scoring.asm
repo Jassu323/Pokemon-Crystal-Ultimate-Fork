@@ -321,7 +321,7 @@ AI_Smart_EffectHandlers:
 	dbw EFFECT_HEAL,             AI_Smart_Heal
 	dbw EFFECT_TOXIC,            AI_Smart_Toxic
 	dbw EFFECT_LIGHT_SCREEN,     AI_Smart_LightScreen
-	; dbw EFFECT_OHKO,             AI_Smart_Ohko
+	dbw EFFECT_OHKO,             AI_Smart_Ohko
 	dbw EFFECT_SKY_ATTACK,       AI_Smart_RazorWind ; Ultimate
 	dbw EFFECT_SUPER_FANG,       AI_Smart_SuperFang
 	dbw EFFECT_TRAP_TARGET,      AI_Smart_TrapTarget
