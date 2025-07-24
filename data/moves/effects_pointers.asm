@@ -37,8 +37,8 @@ MoveEffectsPointers:
 	dw PayDay
 	dw LightScreen
 	dw TriAttack
-	dw OHKOHit
-	dw RazorWind
+	; dw OHKOHit
+	; dw RazorWind
 	dw SuperFang
 	dw StaticDamage
 	dw TrapTarget

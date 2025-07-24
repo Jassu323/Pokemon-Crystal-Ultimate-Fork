@@ -24,7 +24,7 @@ Moves:
 	move SCRATCH,      EFFECT_NORMAL_HIT,         40, NORMAL,       100, 35,   0
 	move VICEGRIP,     EFFECT_FLINCH_HIT,         55, NORMAL,       100, 15,  50
 	move WILL_O_WISP,  EFFECT_BURN,                0, FIRE,          85, 15,   0
-	move RAZOR_WIND,   EFFECT_GUST,               70, FLYING,        95, 10,   0
+	move AIR_CUTTER,   EFFECT_NORMAL_HIT,         70, FLYING,        95, 15,   0
 	move SWORDS_DANCE, EFFECT_ATTACK_UP_2,         0, NORMAL,       100, 30,   0
 	move CUT,          EFFECT_FLINCH_HIT,         60, BUG,           95, 10,  20
 	move GUST,         EFFECT_GUST,               40, FLYING,       100, 35,   0
