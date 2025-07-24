@@ -927,7 +927,7 @@ FlinchHit:
 	kingsrock
 	endmove
 
-/* OHKOHit:
+OHKOHit:
 	checkobedience
 	usedmovetext
 	doturn
@@ -940,7 +940,7 @@ FlinchHit:
 	supereffectivetext
 	checkfaint
 	buildopponentrage
-	endmove */
+	endmove
 
 RecoilHit:
 	checkobedience
@@ -1194,7 +1194,7 @@ Disable:
 	disable
 	endmove
 
-/* RazorWind:
+RazorWind:
 	checkcharge
 	checkobedience
 	doturn
@@ -1214,7 +1214,7 @@ Disable:
 	checkfaint
 	buildopponentrage
 	kingsrock
-	endmove */
+	endmove
 
 Fly:
 	checkcharge
