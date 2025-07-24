@@ -979,7 +979,7 @@ AI_Smart_Reflect:
 	inc [hl]
 	ret
 
-/* AI_Smart_Ohko:
+AI_Smart_Ohko:
 ; Discourage this move if player's HP is below 50%.
 ; Else, encourage move if Evasion is lowered - added in Ultimate
 
@@ -997,7 +997,7 @@ AI_Smart_Reflect:
 	ret c
 	dec [hl]
 	dec [hl]
-	ret */
+	ret
 
 AI_Smart_TrapTarget:
 ; Bind, Wrap, Fire Spin, Clamp

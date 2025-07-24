@@ -5594,7 +5594,7 @@ BattleCommand_HeldFlinch:
 	set SUBSTATUS_FLINCHED, [hl]
 	ret
 
-/* BattleCommand_OHKO:
+BattleCommand_OHKO:
 ; ohko
 
 	call ResetDamage
@@ -5616,7 +5616,7 @@ BattleCommand_HeldFlinch:
 	ld [wCriticalHit], a
 	ld a, $1
 	ld [wAttackMissed], a
-	ret */
+	ret
 
 BattleCommand_CheckCharge:
 ; checkcharge
@@ -5716,9 +5716,9 @@ BattleCommand_Charge:
 	text_asm
 	ld a, BATTLE_VARS_MOVE_ANIM
 	call GetBattleVar
-	cp RAZOR_WIND
+/* 	cp RAZOR_WIND
 	ld hl, .BattleMadeWhirlwindText
-	jr z, .done
+	jr z, .done */
 
 	cp SOLARBEAM
 	ld hl, .BattleTookSunlightText
