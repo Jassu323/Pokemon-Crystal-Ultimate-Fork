@@ -11,7 +11,7 @@ MoveNames::
 	db "SCRATCH@"
 	db "VICEGRIP@"
 	db "WILL-O-WISP@"
-	db "RAZOR WIND@"
+	db "AIR CUTTER@"
 	db "SWORDS DANCE@"
 	db "CUT@"
 	db "GUST@"

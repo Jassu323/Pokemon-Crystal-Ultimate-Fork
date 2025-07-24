@@ -321,7 +321,7 @@ AI_Smart_EffectHandlers:
 	dbw EFFECT_HEAL,             AI_Smart_Heal
 	dbw EFFECT_TOXIC,            AI_Smart_Toxic
 	dbw EFFECT_LIGHT_SCREEN,     AI_Smart_LightScreen
-	dbw EFFECT_OHKO,             AI_Smart_Ohko
+	; dbw EFFECT_OHKO,             AI_Smart_Ohko
 	dbw EFFECT_SKY_ATTACK,       AI_Smart_RazorWind ; Ultimate
 	dbw EFFECT_SUPER_FANG,       AI_Smart_SuperFang
 	dbw EFFECT_TRAP_TARGET,      AI_Smart_TrapTarget
@@ -979,7 +979,7 @@ AI_Smart_Reflect:
 	inc [hl]
 	ret
 
-AI_Smart_Ohko:
+/* AI_Smart_Ohko:
 ; Discourage this move if player's HP is below 50%.
 ; Else, encourage move if Evasion is lowered - added in Ultimate
 
@@ -997,7 +997,7 @@ AI_Smart_Ohko:
 	ret c
 	dec [hl]
 	dec [hl]
-	ret
+	ret */
 
 AI_Smart_TrapTarget:
 ; Bind, Wrap, Fire Spin, Clamp

@@ -12,7 +12,7 @@ MoveDescriptions::
 	dw ScratchDescription
 	dw VicegripDescription
 	dw WillOWispDescription
-	dw RazorWindDescription
+	dw AirCutterDescription
 	dw SwordsDanceDescription
 	dw CutDescription
 	dw GustDescription
@@ -312,7 +312,7 @@ WillOWispDescription:
 	db   "A move that will"
 	next "burn the foe.@"
 
-RazorWindDescription:
+AirCutterDescription:
 	db   "Attack that often"
 	next "hits critically.@"
 

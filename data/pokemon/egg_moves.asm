@@ -17,7 +17,7 @@ BulbasaurEggMoves:
 	db LIGHT_SCREEN
 	db SKULL_BASH
 	db SAFEGUARD
-	db RAZOR_WIND
+	db AIR_CUTTER
 	db ROCK_SLIDE
 	db -1 ; end
 
@@ -27,7 +27,7 @@ CharmanderEggMoves:
 	db ROCK_SLIDE
 	db CRUNCH
 	db OUTRAGE
-	db RAZOR_WIND
+	db AIR_CUTTER
 	db -1 ; end
 
 SquirtleEggMoves:
@@ -111,7 +111,7 @@ ZubatEggMoves:
 	db QUICK_ATTACK
 	db PURSUIT
 	db FAINT_ATTACK
-	db RAZOR_WIND
+	db AIR_CUTTER
 	db WHIRLWIND
 	db -1 ; end
 
@@ -484,7 +484,7 @@ TotodileEggMoves:
 	db THRASH
 	db AMNESIA
 	db OUTRAGE
-	db RAZOR_WIND
+	db AIR_CUTTER
 	db ROCK_SLIDE
 	db -1 ; end
 
@@ -652,7 +652,7 @@ MurkrowEggMoves:
 	db QUICK_ATTACK
 	db MIRROR_MOVE
 	db WING_ATTACK
-	db RAZOR_WIND
+	db AIR_CUTTER
 	db -1 ; end
 
 MisdreavusEggMoves:
@@ -689,7 +689,7 @@ DunsparceEggMoves:
 GligarEggMoves:
 	db METAL_CLAW
 	db WING_ATTACK
-	db RAZOR_WIND
+	db AIR_CUTTER
 	db COUNTER
 	db -1 ; end
 
@@ -789,7 +789,7 @@ SkarmoryEggMoves:
 	db DOUBLE_EDGE
 	db PURSUIT
 	db SAFEGUARD
-	db RAZOR_WIND
+	db AIR_CUTTER
 	db -1 ; end
 
 HoundourEggMoves:

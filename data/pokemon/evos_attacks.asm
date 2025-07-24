@@ -258,7 +258,7 @@ PidgeotEvosAttacks:
 	db 15, QUICK_ATTACK
 	db 23, WING_ATTACK
 	db 31, WHIRLWIND
-	db 36, RAZOR_WIND
+	db 36, AIR_CUTTER
 	db 40, AGILITY
 	db 49, MIRROR_MOVE
 	db 58, SKY_ATTACK
@@ -680,7 +680,7 @@ VenomothEvosAttacks:
 	db 20, SLUDGE
 	db 25, STUN_SPORE
 	db 28, PSYBEAM
-	db 31, RAZOR_WIND
+	db 31, AIR_CUTTER
 	db 36, LEECH_LIFE
 	db 39, SLEEP_POWDER
 	db 44, REFLECT
@@ -1159,7 +1159,7 @@ FarfetchDEvosAttacks:
 	db 25, SWORDS_DANCE
 	db 31, AGILITY
 	db 37, SLASH
-	db 44, RAZOR_WIND
+	db 44, AIR_CUTTER
 	db 51, RAZOR_LEAF
 	db 59, BATON_PASS
 	db 0 ; no more level-up moves
@@ -1727,7 +1727,7 @@ ScytherEvosAttacks:
 	db 24, WING_ATTACK
 	db 30, DOUBLE_TEAM
 	db 36, SLASH
-	db 39, RAZOR_WIND
+	db 39, AIR_CUTTER
 	db 42, SWORDS_DANCE
 	db 48, AGILITY
 	db 54, BATON_PASS
@@ -1990,7 +1990,7 @@ KabutoEvosAttacks:
 
 KabutopsEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, RAZOR_WIND
+	db 1, AIR_CUTTER
 	db 1, SCRATCH
 	db 1, HARDEN
 	db 10, ROCK_THROW
@@ -2014,7 +2014,7 @@ AerodactylEvosAttacks:
 	db 36, TAKE_DOWN
 	db 43, ROCK_SLIDE
 	db 50, CRUNCH
-	db 57, RAZOR_WIND
+	db 57, AIR_CUTTER
 	db 64, HYPER_BEAM
 	db 0 ; no more level-up moves
 
@@ -2041,7 +2041,7 @@ ArticunoEvosAttacks:
 	db 1, POWDER_SNOW
 	db 13, MIST
 	db 25, AGILITY
-	db 37, RAZOR_WIND
+	db 37, AIR_CUTTER
 	db 49, ICE_BEAM
 	db 61, REFLECT
 	db 73, BLIZZARD
@@ -2065,7 +2065,7 @@ MoltresEvosAttacks:
 	db 1, EMBER
 	db 13, FIRE_SPIN
 	db 25, AGILITY
-	db 37, RAZOR_WIND
+	db 37, AIR_CUTTER
 	db 49, FLAMETHROWER
 	db 61, SAFEGUARD
 	db 73, SKY_ATTACK
@@ -2111,7 +2111,7 @@ DragoniteEvosAttacks:
 	db 29, SLAM
 	db 38, DRAGON_RAGE
 	db 47, SAFEGUARD
-	db 55, RAZOR_WIND
+	db 55, AIR_CUTTER
 	db 61, OUTRAGE
 	db 70, HYPER_BEAM
 	db 79, MEGA_KICK
@@ -2365,7 +2365,7 @@ LedianEvosAttacks:
 	db 33, BATON_PASS
 	db 42, SWIFT
 	db 51, AGILITY
-	db 60, RAZOR_WIND
+	db 60, AIR_CUTTER
 	db 0 ; no more level-up moves
 
 SpinarakEvosAttacks:
@@ -2491,7 +2491,7 @@ TogeticEvosAttacks:
 	db 24, WING_ATTACK
 	db 31, SAFEGUARD
 	db 38, DOUBLE_EDGE
-	db 49, RAZOR_WIND
+	db 49, AIR_CUTTER
 	db 0 ; no more level-up moves
 
 NatuEvosAttacks:
@@ -2716,7 +2716,7 @@ YanmaEvosAttacks:
 	db 31, LEECH_LIFE
 	db 37, WHIRLWIND
 	db 43, SCREECH
-	db 49, RAZOR_WIND
+	db 49, AIR_CUTTER
 	db 55, ANCIENTPOWER
 	db 0 ; no more level-up moves
 
@@ -2906,7 +2906,7 @@ GligarEvosAttacks:
 	db 20, MAGNITUDE
 	db 27, WING_ATTACK
 	db 34, SLASH
-	db 41, RAZOR_WIND
+	db 41, AIR_CUTTER
 	db 48, SCREECH
 	db 55, EARTHQUAKE
 	; db 62, GUILLOTINE
