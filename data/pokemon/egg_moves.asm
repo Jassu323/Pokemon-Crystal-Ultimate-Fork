@@ -397,7 +397,7 @@ GoldeenEggMoves:
 MrMimeEggMoves:
 	db FUTURE_SIGHT
 	db HYPNOSIS
-	db MIMIC
+	; db MIMIC
 	db -1 ; end
 
 ScytherEggMoves:
@@ -543,7 +543,7 @@ CleffaEggMoves:
 	db SOFTBOILED
 	db DISABLE
 	db DOUBLE_EDGE
-	db MIMIC
+	; db MIMIC
 	db -1 ; end
 
 IgglybuffEggMoves:

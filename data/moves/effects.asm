@@ -1156,12 +1156,28 @@ Rage:
 	kingsrock
 	endmove
 
-Mimic:
+Hurricane:
 	checkobedience
 	usedmovetext
 	doturn
+	critical
+	damagestats
+	damagecalc
+	thunderaccuracy
 	checkhit
-	mimic
+	effectchance
+	stab
+	damagevariation
+	doubleflyingdamage
+	moveanim
+	failuretext
+	applydamage
+	criticaltext
+	supereffectivetext
+	checkfaint
+	buildopponentrage
+	kingsrock
+	confusetarget
 	endmove
 
 Metronome:

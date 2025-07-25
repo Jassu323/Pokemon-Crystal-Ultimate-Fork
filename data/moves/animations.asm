@@ -102,7 +102,7 @@ BattleAnimations::
 	dw BattleAnim_Rage
 	dw BattleAnim_Teleport
 	dw BattleAnim_NightShade
-	dw BattleAnim_Mimic
+	dw BattleAnim_Hurricane
 	dw BattleAnim_Screech
 	dw BattleAnim_DoubleTeam
 	dw BattleAnim_Recover
@@ -2403,20 +2403,33 @@ BattleAnim_PayDay:
 	anim_wait 64
 	anim_ret
 
-BattleAnim_Mimic:
-	anim_1gfx ANIM_GFX_SPEED
-	anim_obp0 $fc
-	anim_sound 63, 3, SFX_LICK
-	anim_obj ANIM_OBJ_MIMIC, 132, 44, $0
-	anim_obj ANIM_OBJ_MIMIC, 132, 44, $8
-	anim_obj ANIM_OBJ_MIMIC, 132, 44, $10
-	anim_obj ANIM_OBJ_MIMIC, 132, 44, $18
-	anim_obj ANIM_OBJ_MIMIC, 132, 44, $20
-	anim_obj ANIM_OBJ_MIMIC, 132, 44, $28
-	anim_obj ANIM_OBJ_MIMIC, 132, 44, $30
-	anim_obj ANIM_OBJ_MIMIC, 132, 44, $38
-	anim_wait 128
-	anim_wait 48
+BattleAnim_Hurricane:
+	anim_2gfx ANIM_GFX_WIND, ANIM_GFX_WHIP
+.loop
+	anim_sound 0, 1, SFX_RAZOR_WIND
+	anim_obj ANIM_OBJ_GUST, 136, 72, $0
+	anim_wait 6
+	anim_loop 6, .loop
+	anim_wait 6
+	anim_bgeffect ANIM_BG_06, $0, $1, $0
+.loop2
+	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $4, $2
+	anim_sound 0, 1, SFX_RAZOR_WIND
+	anim_obj ANIM_OBJ_42, 152, 40, $3
+	anim_wait 1
+	anim_obj ANIM_OBJ_41, 120, 64, $83
+	anim_wait 1
+	anim_obj ANIM_OBJ_41, 124, 52, $83
+	anim_wait 1
+	anim_sound 0, 1, SFX_RAZOR_WIND
+	anim_obj ANIM_OBJ_42, 152, 64, $3
+	anim_wait 1
+	anim_obj ANIM_OBJ_41, 120, 40, $83
+	anim_wait 1
+	anim_obj ANIM_OBJ_42, 148, 52, $3
+	anim_wait 1
+	anim_loop 8, .loop2
+	anim_wait 24
 	anim_ret
 
 BattleAnim_LovelyKiss:

@@ -43,7 +43,7 @@ Moves:
 	move HEADBUTT,     EFFECT_FLINCH_HIT,         70, NORMAL,       100, 15,  30
 	move HORN_ATTACK,  EFFECT_POISON_HIT,         65, POISON,       100, 25,  10
 	move FURY_ATTACK,  EFFECT_MULTI_HIT,          15, NORMAL,        95, 15,   0
-	move WATER_PULSE,  EFFECT_CONFUSE_HIT,        60, WATER,        100, 20,  20
+	move WATER_PULSE,  EFFECT_CONFUSE_HIT,        60, WATER,        100, 20,  30
 	move TACKLE,       EFFECT_NORMAL_HIT,         40, NORMAL,       100, 35,   0
 	move BODY_SLAM,    EFFECT_PARALYZE_HIT,       85, NORMAL,       100, 15,  30
 	move WRAP,         EFFECT_TRAP_TARGET,        15, NORMAL,        85, 20,   0
@@ -113,7 +113,7 @@ Moves:
 	move RAGE,         EFFECT_RAGE,               30, NORMAL,       100, 20,   0
 	move TELEPORT,     EFFECT_TELEPORT,            0, PSYCHIC_TYPE, 100, 20,   0
 	move NIGHT_SHADE,  EFFECT_NIGHT_SHADE,        80, GHOST,        100, 10,   0
-	move MIMIC,        EFFECT_MIMIC,               0, NORMAL,       100, 10,   0
+	move HURRICANE,    EFFECT_HURRICANE,         120, FLYING,        70, 10,  30
 	move SCREECH,      EFFECT_DEFENSE_DOWN_2,      0, NORMAL,        85, 40,   0
 	move DOUBLE_TEAM,  EFFECT_EVASION_UP,          0, NORMAL,       100, 15,   0
 	move RECOVER,      EFFECT_HEAL,                0, NORMAL,       100, 10,   0

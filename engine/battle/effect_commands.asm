@@ -1019,7 +1019,7 @@ BattleCommand_DoTurn:
 .player
 	call GetPartyLocation
 	push hl
-	call CheckMimicUsed
+	; call CheckMimicUsed
 	pop hl
 	ret c
 
@@ -1048,12 +1048,12 @@ BattleCommand_DoTurn:
 	ld b, 0
 	add hl, bc
 	ld a, [hl]
-	cp MIMIC
+	; cp MIMIC
 	jr z, .mimic
 	ld hl, wWildMonMoves
 	add hl, bc
 	ld a, [hl]
-	cp MIMIC
+	; cp MIMIC
 	ret z
 
 .mimic
@@ -1092,7 +1092,7 @@ BattleCommand_DoTurn:
 	db EFFECT_RAMPAGE
 	db -1
 
-CheckMimicUsed:
+/* CheckMimicUsed:
 	ldh a, [hBattleTurn]
 	and a
 	ld a, [wCurMoveNum]
@@ -1120,7 +1120,7 @@ CheckMimicUsed:
 
 .mimic
 	and a
-	ret
+	ret */
 
 BattleCommand_Critical:
 ; critical
@@ -5967,7 +5967,9 @@ BattleCommand_FinishConfusingTarget:
 	jr z, .got_effect
 	cp EFFECT_SWAGGER
 	jr z, .got_effect
-	call AnimateCurrentMove
+	cp EFFECT_HURRICANE
+	jr z, .got_effect
+	call AnimateCurrentMove ; This line seems completely redundant. 
 
 .got_effect
 	ld de, ANIM_CONFUSED
@@ -6365,10 +6367,10 @@ FailMove:
 	call AnimateFailedMove
 	; fallthrough
 
-FailMimic:
+/* FailMimic:
 	ld hl, ButItFailedText ; 'but it failed!'
 	ld de, ItFailedText    ; 'it failed!'
-	jp FailText_CheckOpponentProtect
+	jp FailText_CheckOpponentProtect */
 
 PrintDidntAffect:
 ; 'it didn't affect'

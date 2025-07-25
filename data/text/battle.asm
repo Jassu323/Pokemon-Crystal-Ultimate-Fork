@@ -855,13 +855,13 @@ SubFadedText:
 	line "SUBSTITUTE faded!"
 	prompt
 
-MimicLearnedMoveText:
+/* MimicLearnedMoveText:
 	text "<USER>"
 	line "learned"
 	cont "@"
 	text_ram wStringBuffer1
 	text "!"
-	prompt
+	prompt */
 
 WasSeededText:
 	text "<TARGET>"
