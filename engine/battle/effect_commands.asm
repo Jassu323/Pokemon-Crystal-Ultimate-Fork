@@ -1736,6 +1736,8 @@ BattleCommand_CheckHit:
 	ret z
 	cp TWISTER
 	ret
+	cp HURRICANE
+	ret
 
 .DigMoves:
 	ld a, BATTLE_VARS_MOVE_ANIM
