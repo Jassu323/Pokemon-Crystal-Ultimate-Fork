@@ -334,7 +334,7 @@ AI_Smart_EffectHandlers:
 	dbw EFFECT_SUBSTITUTE,       AI_Smart_Substitute
 	dbw EFFECT_HYPER_BEAM,       AI_Smart_HyperBeam
 	dbw EFFECT_RAGE,             AI_Smart_Rage
-	dbw EFFECT_MIMIC,            AI_Smart_Mimic
+	; dbw EFFECT_MIMIC,            AI_Smart_Mimic
 	dbw EFFECT_LEECH_SEED,       AI_Smart_LeechSeed
 	dbw EFFECT_DISABLE,          AI_Smart_Disable
 	dbw EFFECT_COUNTER,          AI_Smart_Counter
@@ -1292,7 +1292,7 @@ AI_Smart_Rage:
 	inc [hl]
 	ret
 
-AI_Smart_Mimic:
+/* AI_Smart_Mimic:
 	ld a, [wLastPlayerCounterMove]
 	and a
 	jr z, .asm_38be9
@@ -1331,7 +1331,7 @@ AI_Smart_Mimic:
 	call AI_50_50
 	ret c
 	dec [hl]
-	ret
+	ret */
 
 .asm_38be9
 	call AICompareSpeed

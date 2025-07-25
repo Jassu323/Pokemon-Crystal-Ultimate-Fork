@@ -275,7 +275,7 @@ RattataEvosAttacks:
 	db 19, FOCUS_ENERGY
 	db 25, PURSUIT
 	db 31, SUPER_FANG
-	db 37, MIMIC
+	; db 37, MIMIC
 	db 43, BODY_SLAM
 	db 49, SUBSTITUTE
 	db 0 ; no more level-up moves
@@ -289,7 +289,7 @@ RaticateEvosAttacks:
 	db 20, SCARY_FACE
 	db 27, PURSUIT
 	db 34, SUPER_FANG
-	db 41, MIMIC
+	; db 41, MIMIC
 	db 48, BODY_SLAM
 	db 55, SUBSTITUTE
 	db 0 ; no more level-up moves
@@ -1712,7 +1712,7 @@ MrMimeEvosAttacks:
 	db 36, ENCORE
 	db 41, BATON_PASS
 	db 46, SAFEGUARD
-	db 51, MIMIC
+	; db 51, MIMIC
 	db 56, MIRROR_MOVE
 	db 0 ; no more level-up moves
 
@@ -2142,7 +2142,7 @@ MewEvosAttacks:
 	db 50, TRANSFORM
 	db 60, ROCK_SLIDE
 	db 70, FUTURE_SIGHT
-	db 80, MIMIC
+	; db 80, MIMIC
 	db 90, MEGA_KICK
 	db 100, BARRAGE
 	db 0 ; no more level-up moves
@@ -2597,7 +2597,7 @@ AzumarillEvosAttacks:
 SudowoodoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, FLAIL
-	db 1, MIMIC
+	; db 1, MIMIC
 	db 10, ROCK_THROW
 	db 17, LOW_KICK
 	db 25, LEECH_SEED
@@ -2835,7 +2835,7 @@ UnownEvosAttacks:
 
 WobbuffetEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, MIMIC
+	; db 1, MIMIC
 	db 1, COUNTER
 	db 1, MIRROR_COAT
 	db 1, DESTINY_BOND

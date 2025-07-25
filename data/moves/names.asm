@@ -100,7 +100,7 @@ MoveNames::
 	db "RAGE@"
 	db "TELEPORT@"
 	db "NIGHT SHADE@"
-	db "MIMIC@"
+	db "HURRICANE@"
 	db "SCREECH@"
 	db "DOUBLE TEAM@"
 	db "RECOVER@"

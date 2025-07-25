@@ -15,7 +15,7 @@ StallMoves:
 	db MEDITATE
 	db AGILITY
 	db RAGE
-	db MIMIC
+	; db MIMIC
 	db SCREECH
 	db HARDEN
 	db WITHDRAW

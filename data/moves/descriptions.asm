@@ -101,7 +101,7 @@ MoveDescriptions::
 	dw RageDescription
 	dw TeleportDescription
 	dw NightShadeDescription
-	dw MimicDescription
+	dw HurricaneDescription
 	dw ScreechDescription
 	dw DoubleTeamDescription
 	dw RecoverDescription
@@ -389,8 +389,8 @@ FuryAttackDescription:
 	next "2-5 times.@"
 
 WaterPulseDescription:
-	db   "A watery blast;"
-	next "may cause confusion.@"
+	db   "Watery blast; may"
+	next "cause confusion.@"
 
 TackleDescription:
 	db   "A full-body charge"
@@ -668,9 +668,9 @@ NightShadeDescription:
 	db   "Uses SPCL.ATK for"
 	next "special damage.@"
 
-MimicDescription:
-	db   "Copies a move used"
-	next "by the foe.@"
+HurricaneDescription:
+	db   "A storm that may"
+	next "confuse the foe.@"
 
 ScreechDescription:
 	db   "Sharply reduces"

@@ -1,7 +1,7 @@
 BattleCommand_Mimic:
 ; mimic
 
-	call ClearLastMove
+/* 	call ClearLastMove
 	call BattleCommand_MoveDelay
 	ld a, [wAttackMissed]
 	and a
@@ -47,4 +47,5 @@ BattleCommand_Mimic:
 	jp StdBattleTextbox
 
 .fail
-	jp FailMimic
+	jp FailMimic */
+	ret

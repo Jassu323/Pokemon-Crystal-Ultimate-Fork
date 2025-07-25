@@ -82,7 +82,7 @@ MoveEffectsPointers:
 	dw Substitute
 	dw HyperBeam
 	dw Rage
-	dw Mimic
+	dw Hurricane
 	dw Metronome
 	dw LeechSeed
 	dw Splash
