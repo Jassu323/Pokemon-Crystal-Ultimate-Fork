@@ -252,12 +252,11 @@ MoveDescriptions::
 	dw WhirlpoolDescription
 	dw BeatUpDescription
 	dw DrainPunchDescription
-	dw MoveFDDescription
+	dw RockTombDescription
 	dw MoveFEDescription
 	dw MoveFFDescription
 	dw Move00Description
 
-MoveFDDescription:
 MoveFEDescription:
 MoveFFDescription:
 Move00Description:
@@ -1270,3 +1269,7 @@ BeatUpDescription:
 DrainPunchDescription:
 	db   "Steals 1/2 of the"
 	next "damage inflicted.@"
+
+RockTombDescription:
+	db   "Drops rocks, which"
+	next "slows the foe.@"

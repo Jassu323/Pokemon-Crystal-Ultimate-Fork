@@ -253,7 +253,7 @@ BattleAnimations::
 	dw BattleAnim_Whirlpool
 	dw BattleAnim_BeatUp
 	dw BattleAnim_DrainPunch
-	dw BattleAnim_253
+	dw BattleAnim_RockTomb
 	dw BattleAnim_254
 	dw BattleAnim_SweetScent2
 ; $100
@@ -281,7 +281,6 @@ BattleAnimations::
 	dw BattleAnim_HitConfusion
 
 BattleAnim_0:
-BattleAnim_252:
 BattleAnim_253:
 BattleAnim_254:
 BattleAnim_MirrorMove:
@@ -4676,6 +4675,26 @@ BattleAnim_DrainPunch:
 	anim_wait 32
 	anim_incbgeffect ANIM_BG_1C
 	anim_call BattleAnim_ShowMon_0
+	anim_ret
+
+BattleAnim_RockTomb:
+	anim_1gfx ANIM_GFX_ROCKS
+	anim_bgeffect ANIM_BG_1F, $20, $2, $0
+	anim_sound 0, 1, SFX_STRENGTH
+	anim_obj ANIM_OBJ_BIG_ROCK, 128, 64, $40
+	anim_wait 12
+	anim_sound 0, 1, SFX_STRENGTH
+	anim_obj ANIM_OBJ_BIG_ROCK, 120, 68, $30
+	anim_wait 12
+	anim_sound 0, 1, SFX_STRENGTH
+	anim_obj ANIM_OBJ_BIG_ROCK, 152, 68, $30
+	anim_wait 12
+	anim_sound 0, 1, SFX_STRENGTH
+	anim_obj ANIM_OBJ_BIG_ROCK, 144, 64, $40
+	anim_wait 12
+	anim_sound 0, 1, SFX_STRENGTH
+	anim_obj ANIM_OBJ_BIG_ROCK, 136, 68, $30
+	anim_wait 56
 	anim_ret
 
 BattleAnimSub_Drain:

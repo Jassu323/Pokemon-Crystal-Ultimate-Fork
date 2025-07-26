@@ -258,6 +258,7 @@
 	const WHIRLPOOL    ; fa
 	const BEAT_UP      ; fb
 	const DRAIN_PUNCH  ; fc
+	const ROCK_TOMB    ; fd
 	
 NUM_ATTACKS EQU const_value - 1
 
