@@ -251,13 +251,12 @@ MoveDescriptions::
 	dw RockSmashDescription
 	dw WhirlpoolDescription
 	dw BeatUpDescription
-	dw MoveFCDescription
+	dw DrainPunchDescription
 	dw MoveFDDescription
 	dw MoveFEDescription
 	dw MoveFFDescription
 	dw Move00Description
 
-MoveFCDescription:
 MoveFDDescription:
 MoveFEDescription:
 MoveFFDescription:
@@ -1267,3 +1266,7 @@ WhirlpoolDescription:
 BeatUpDescription:
 	db   "A brutalizing"
 	next "physical attack.@"
+
+DrainPunchDescription:
+	db   "Steals 1/2 of the"
+	next "damage inflicted.@"

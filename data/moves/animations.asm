@@ -252,7 +252,7 @@ BattleAnimations::
 	dw BattleAnim_RockSmash
 	dw BattleAnim_Whirlpool
 	dw BattleAnim_BeatUp
-	dw BattleAnim_252
+	dw BattleAnim_DrainPunch
 	dw BattleAnim_253
 	dw BattleAnim_254
 	dw BattleAnim_SweetScent2
@@ -4646,6 +4646,37 @@ BattleAnim_BeatUp:
     anim_obj ANIM_OBJ_01, 144, 64, $0
     anim_wait 12
     anim_ret
+
+BattleAnim_DrainPunch:
+	anim_2gfx ANIM_GFX_CHARGE, ANIM_GFX_HIT
+	anim_call BattleAnim_TargetObj_1Row
+	anim_bgeffect ANIM_BG_1C, $0, $0, $10
+	anim_setvar $0
+.loop
+	anim_sound 6, 3, SFX_WATER_GUN
+	anim_obj ANIM_OBJ_0A, 136, 56, $43
+	anim_obj ANIM_OBJ_ABSORB, 128, 48, $2
+	anim_wait 6
+	anim_sound 6, 3, SFX_WATER_GUN
+	anim_obj ANIM_OBJ_ABSORB, 136, 64, $3
+	anim_wait 6
+	anim_sound 6, 3, SFX_WATER_GUN
+	anim_obj ANIM_OBJ_ABSORB, 136, 32, $4
+	anim_wait 6
+	anim_incvar
+	anim_if_var_equal $7, .done
+	anim_if_var_equal $2, .spawn
+	anim_jump .loop
+
+.spawn
+	anim_obj ANIM_OBJ_3D, 44, 88, $0
+	anim_jump .loop
+
+.done
+	anim_wait 32
+	anim_incbgeffect ANIM_BG_1C
+	anim_call BattleAnim_ShowMon_0
+	anim_ret
 
 BattleAnimSub_Drain:
 	anim_obj ANIM_OBJ_71, 132, 44, $0
