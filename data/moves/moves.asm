@@ -109,7 +109,7 @@ Moves:
 	move HYPNOSIS,     EFFECT_SLEEP,               0, PSYCHIC_TYPE,  70, 20,   0
 	move MEDITATE,     EFFECT_ATTACK_UP,           0, PSYCHIC_TYPE, 100, 40,   0
 	move AGILITY,      EFFECT_SPEED_UP_2,          0, PSYCHIC_TYPE, 100, 30,   0
-	move QUICK_ATTACK, EFFECT_PRIORITY_HIT,       40, NORMAL,       100, 30,   0
+	move QUICK_ATTACK, EFFECT_PRIORITY_HIT,       45, NORMAL,       100, 30,   0
 	move RAGE,         EFFECT_RAGE,               30, NORMAL,       100, 20,   0
 	move TELEPORT,     EFFECT_TELEPORT,            0, PSYCHIC_TYPE, 100, 20,   0
 	move NIGHT_SHADE,  EFFECT_NIGHT_SHADE,        80, GHOST,        100, 10,   0
@@ -194,7 +194,7 @@ Moves:
 	move SPITE,        EFFECT_SPITE,               0, GHOST,        100, 10,   0
 	move POWDER_SNOW,  EFFECT_FREEZE_HIT,         40, ICE,          100, 10,  20
 	move PROTECT,      EFFECT_PROTECT,             0, NORMAL,       100, 10,   0
-	move MACH_PUNCH,   EFFECT_PRIORITY_HIT,       60, FIGHTING,     100, 15,   0
+	move MACH_PUNCH,   EFFECT_PRIORITY_HIT,       40, FIGHTING,     100, 15,   0
 	move SCARY_FACE,   EFFECT_SPEED_DOWN_2,        0, NORMAL,       100, 10,   0
 	move FAINT_ATTACK, EFFECT_ALWAYS_HIT,         60, DARK,         100, 20,   0
 	move SWEET_KISS,   EFFECT_CONFUSE,             0, NORMAL,       100, 10,   0
@@ -209,7 +209,7 @@ Moves:
 	move PERISH_SONG,  EFFECT_PERISH_SONG,         0, NORMAL,       100,  5,   0
 	move ICY_WIND,     EFFECT_SPEED_DOWN_HIT,     55, ICE,           95, 15, 100
 	move DETECT,       EFFECT_PROTECT,             0, FIGHTING,     100, 20,   0
-	move BONE_RUSH,    EFFECT_PRIORITY_HIT,       65, GROUND,        90, 15,   0
+	move BONE_RUSH,    EFFECT_PRIORITY_HIT,       60, GROUND,        90, 15,   0
 	move LOCK_ON,      EFFECT_LOCK_ON,             0, NORMAL,       100,  5,   0
 	move OUTRAGE,      EFFECT_RAMPAGE,           120, DRAGON,       100, 10,   0
 	move SANDSTORM,    EFFECT_SANDSTORM,           0, ROCK,         100, 10,   0
@@ -263,3 +263,4 @@ Moves:
 	move ROCK_SMASH,   EFFECT_DEFENSE_DOWN_HIT,   40, FIGHTING,     100, 10, 100
 	move WHIRLPOOL,    EFFECT_PRIORITY_HIT,       50, WATER,        100, 10,   0
 	move BEAT_UP,      EFFECT_BEAT_UP,            80, DARK,         100, 15,  20
+	move DRAIN_PUNCH,  EFFECT_LEECH_HIT,          60, FIGHTING,     100, 15,   0
