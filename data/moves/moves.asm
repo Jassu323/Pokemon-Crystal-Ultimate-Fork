@@ -133,8 +133,8 @@ Moves:
 	move MIRROR_MOVE,  EFFECT_MIRROR_MOVE,         0, FLYING,       100, 20,   0
 	move SELFDESTRUCT, EFFECT_SELFDESTRUCT,      200, NORMAL,       100,  1,   0
 	move EGG_BOMB,     EFFECT_BURN_HIT,          100, FIRE,          75, 10,  30
-	move LICK,         EFFECT_PARALYZE_HIT,       20, GHOST,         95, 15,  50
-	move SMOG,         EFFECT_POISON_HIT,         20, POISON,        95, 15,  50
+	move LICK,         EFFECT_PARALYZE_HIT,       20, GHOST,         95, 20,  50
+	move SMOG,         EFFECT_POISON_HIT,         20, POISON,        95, 20,  50
 	move SLUDGE,       EFFECT_POISON_HIT,         65, POISON,       100, 20,  30
 	move BONE_CLUB,    EFFECT_MULTI_HIT,          30, GROUND,        85, 10,   0
 	move FIRE_BLAST,   EFFECT_BURN_HIT,          120, FIRE,          85,  5,  10
