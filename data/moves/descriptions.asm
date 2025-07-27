@@ -253,11 +253,10 @@ MoveDescriptions::
 	dw BeatUpDescription
 	dw DrainPunchDescription
 	dw RockTombDescription
-	dw MoveFEDescription
+	dw GlacialSlamDescription
 	dw MoveFFDescription
 	dw Move00Description
 
-MoveFEDescription:
 MoveFFDescription:
 Move00Description:
 	db "?@"
@@ -1273,3 +1272,7 @@ DrainPunchDescription:
 RockTombDescription:
 	db   "Drops rocks, which"
 	next "slows the foe.@"
+
+GlacialSlamDescription:
+	db   "An icy tackle that"
+	next "hurts the user."
