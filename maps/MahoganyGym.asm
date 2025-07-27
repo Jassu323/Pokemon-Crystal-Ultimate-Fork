@@ -41,7 +41,7 @@ MahoganyGymPryceScript:
 	writetext PryceText_GlacierBadgeSpeech
 	promptbutton
 	verbosegiveitem TM_GLACIAL_SLAM
-	iffalse MahoganyGym_NoRoomForGlacialSLam
+	iffalse MahoganyGym_NoRoomForGlacialSlam
 	setevent EVENT_GOT_TM16_GLACIAL_SLAM
 	writetext PryceText_GlacialSlamSpeech
 	waitbutton
