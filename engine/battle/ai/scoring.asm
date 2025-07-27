@@ -375,7 +375,7 @@ AI_Smart_EffectHandlers:
 	dbw EFFECT_RAIN_DANCE,       AI_Smart_RainDance
 	dbw EFFECT_SUNNY_DAY,        AI_Smart_SunnyDay
 	dbw EFFECT_BELLY_DRUM,       AI_Smart_BellyDrum
-	dbw EFFECT_PSYCH_UP,         AI_Smart_SpDefenseUp2
+	dbw EFFECT_CALM_MIND,        AI_Smart_SpDefenseUp2
 	dbw EFFECT_MIRROR_COAT,      AI_Smart_MirrorCoat
 	dbw EFFECT_SKULL_BASH,       AI_Smart_SkullBash
 	dbw EFFECT_TWISTER,          AI_Smart_Twister

@@ -635,7 +635,7 @@ WillGroup:
 			db $bf, PERFECT_DV ; atk|def, spd|spc
 			dw $50C3, $50C3, $50C3, $50C3, $50C3
 			db NEVERMELTICE
-			db PSYCHIC_M, BLIZZARD, PSYCH_UP, LOVELY_KISS
+			db PSYCHIC_M, BLIZZARD, CALM_MIND, LOVELY_KISS
 	db 89, ESPEON
 			db $bf, PERFECT_DV ; atk|def, spd|spc
 			dw $50C3, $50C3, $50C3, $50C3, $50C3
@@ -3267,7 +3267,7 @@ SabrinaGroup:
 			db $bf, PERFECT_DV ; atk|def, spd|spc
 			dw $C8AF, $C8AF, $C8AF, $C8AF, $C8AF
 			db LEFTOVERS
-			db SEISMIC_TOSS, PSYCH_UP, PSYCHIC_M, POISON_GAS
+			db SEISMIC_TOSS, CALM_MIND, PSYCHIC_M, POISON_GAS
 	db 83, EXEGGUTOR
 			db $bf, PERFECT_DV ; atk|def, spd|spc
 			dw $C8AF, $C8AF, $C8AF, $C8AF, $C8AF
@@ -3282,12 +3282,12 @@ SabrinaGroup:
 			db $bf, PERFECT_DV ; atk|def, spd|spc
 			dw $C8AF, $C8AF, $C8AF, $C8AF, $C8AF
 			db MYSTIC_WATER
-			db PSYCH_UP, PSYCHIC_M, SURF, THUNDER_WAVE
+			db CALM_MIND, PSYCHIC_M, SURF, THUNDER_WAVE
 	db 86, ALAKAZAM
 			db PERFECT_DV, PERFECT_DV ; atk|def, spd|spc
 			dw $C8AF, $C8AF, $C8AF, $C8AF, $C8AF
 			db TWISTEDSPOON
-			db PSYCHIC_M, PSYCH_UP, RECOVER, FIRE_PUNCH
+			db PSYCHIC_M, CALM_MIND, RECOVER, FIRE_PUNCH
 	db -1 ; end
 
 BugCatcherGroup:

@@ -143,7 +143,7 @@ MoveEffectsPointers:
 	dw AllUpHit
 	dw FakeOut
 	dw BellyDrum
-	dw PsychUp
+	dw CalmMind
 	dw MirrorCoat
 	dw SkullBash
 	dw Twister

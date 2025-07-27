@@ -244,7 +244,7 @@ BattleAnimations::
 	dw BattleAnim_SunnyDay
 	dw BattleAnim_Crunch
 	dw BattleAnim_MirrorCoat
-	dw BattleAnim_PsychUp
+	dw BattleAnim_CalmMind
 	dw BattleAnim_Extremespeed
 	dw BattleAnim_Ancientpower
 	dw BattleAnim_ShadowBall
@@ -4478,9 +4478,11 @@ BattleAnim_MirrorCoat:
 	anim_wait 32
 	anim_ret
 
-BattleAnim_PsychUp:
+BattleAnim_CalmMind:
 	anim_1gfx ANIM_GFX_MISC
 	anim_sound 6, 1, SFX_FLASH
+	anim_bgeffect ANIM_BG_06, $0, $2, $0
+    anim_bgeffect ANIM_BG_ALTERNATE_HUES, $0, $2, $0
 .loop
 	anim_obj ANIM_OBJ_MIND_READER, 6, 0,   11, 0, $3
 	anim_obj ANIM_OBJ_MIND_READER, 6, 0,   11, 0, $12
@@ -4489,6 +4491,7 @@ BattleAnim_PsychUp:
 	anim_wait 16
 	anim_loop 2, .loop
 	anim_wait 32
+	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
 BattleAnim_Extremespeed:

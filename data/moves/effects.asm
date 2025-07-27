@@ -1885,7 +1885,7 @@ BellyDrum:
 	bellydrum
 	endmove
 
-PsychUp:
+CalmMind:
 	checkobedience
 	usedmovetext
 	doturn

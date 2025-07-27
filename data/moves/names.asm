@@ -242,7 +242,7 @@ MoveNames::
 	db "SUNNY DAY@"
 	db "CRUNCH@"
 	db "MIRROR COAT@"
-	db "PSYCH UP@"
+	db "CALM MIND@"
 	db "EXTREMESPEED@"
 	db "ANCIENTPOWER@"
 	db "SHADOW BALL@"
