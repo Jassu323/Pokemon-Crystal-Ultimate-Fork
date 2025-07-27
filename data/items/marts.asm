@@ -277,7 +277,7 @@ MartCeladon2F2:
 
 MartCeladon3F:
 	db 2 ; # items
-	db TM_DOUBLE_TEAM
+	db TM_ENDURE
 	db TM_PROTECT
 	db -1 ; end
 
