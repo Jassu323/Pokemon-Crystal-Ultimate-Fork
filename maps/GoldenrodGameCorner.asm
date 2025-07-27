@@ -76,27 +76,27 @@ GoldenrodGameCornerTMVendor_LoopScript:
 	sjump GoldenrodGameCornerPrizeVendor_CancelPurchaseScript
 
 .Thunder:
-	checkitem TM_ENDURE
+	checkitem TM_ROCK_TOMB
 	iftrue GoldenrodGameCornerPrizeVendor_AlreadyHaveTMScript
 	checkcoins GOLDENRODGAMECORNER_TM25_COINS
 	ifequal HAVE_LESS, GoldenrodGameCornerPrizeVendor_NotEnoughCoinsScript
-	getitemname STRING_BUFFER_3, TM_ENDURE
+	getitemname STRING_BUFFER_3, TM_ROCK_TOMB
 	scall GoldenrodGameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse GoldenrodGameCornerPrizeVendor_CancelPurchaseScript
-	giveitem TM_ENDURE
+	giveitem TM_ROCK_TOMB
 	iffalse GoldenrodGameCornerPrizeMonVendor_NoRoomForPrizeScript
 	takecoins GOLDENRODGAMECORNER_TM25_COINS
 	sjump GoldenrodGameCornerTMVendor_FinishScript
 
 .Blizzard:
-	checkitem TM_DEFENSE_CURL
+	checkitem TM_ICY_WIND
 	iftrue GoldenrodGameCornerPrizeVendor_AlreadyHaveTMScript
 	checkcoins GOLDENRODGAMECORNER_TM14_COINS
 	ifequal HAVE_LESS, GoldenrodGameCornerPrizeVendor_NotEnoughCoinsScript
-	getitemname STRING_BUFFER_3, TM_DEFENSE_CURL
+	getitemname STRING_BUFFER_3, TM_ICY_WIND
 	scall GoldenrodGameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse GoldenrodGameCornerPrizeVendor_CancelPurchaseScript
-	giveitem TM_DEFENSE_CURL
+	giveitem TM_ICY_WIND
 	iffalse GoldenrodGameCornerPrizeMonVendor_NoRoomForPrizeScript
 	takecoins GOLDENRODGAMECORNER_TM14_COINS
 	sjump GoldenrodGameCornerTMVendor_FinishScript

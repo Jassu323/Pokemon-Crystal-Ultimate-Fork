@@ -1270,8 +1270,8 @@ DrainPunchDescription:
 	next "damage inflicted.@"
 
 RockTombDescription:
-	db   "Drops rocks, which"
-	next "slows the foe.@"
+	db   "Drops rocks and lo-"
+	next "wers foe's SPEED.@"
 
 GlacialSlamDescription:
 	db   "An icy tackle that"

@@ -239,7 +239,7 @@ ENDM
 	add_tm SNORE        ; cc
 	add_tm BLIZZARD     ; cd
 	add_tm HYPER_BEAM   ; ce
-	add_tm ICY_WIND     ; cf
+	add_tm GLACIAL_SLAM ; cf
 	add_tm PROTECT      ; d0
 	add_tm RAIN_DANCE   ; d1
 	add_tm GIGA_DRAIN   ; d2
@@ -255,7 +255,7 @@ ENDM
 	add_tm PSYCHIC_M    ; dd
 	add_tm SHADOW_BALL  ; de
 	add_tm MUD_SLAP     ; df
-	add_tm DOUBLE_TEAM  ; e0
+	add_tm ROCK_TOMB    ; e0
 	add_tm ICE_PUNCH    ; e1
 	add_tm SWAGGER      ; e2
 	add_tm SLEEP_TALK   ; e3
@@ -263,7 +263,7 @@ ENDM
 	add_tm SANDSTORM    ; e5
 	add_tm FIRE_BLAST   ; e6
 	add_tm SWIFT        ; e7
-	add_tm DEFENSE_CURL ; e8
+	add_tm ICY_WIND     ; e8
 	add_tm THUNDERPUNCH ; e9
 	add_tm DREAM_EATER  ; ea
 	add_tm DETECT       ; eb
