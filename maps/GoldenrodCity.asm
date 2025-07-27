@@ -58,10 +58,10 @@ MoveTutorScript:
 	yesorno
 	iffalse .Refused
 	special DisplayCoinCaseBalance
-	writetext GoldenrodCityMoveTutorAsk400CoinsOkayText
+	writetext GoldenrodCityMoveTutorAsk500CoinsOkayText
 	yesorno
 	iffalse .Refused2
-	checkcoins 400
+	checkcoins 500
 	ifequal HAVE_LESS, .NotEnoughMoney
 	writetext GoldenrodCityMoveTutorWhichMoveShouldITeachText
 	loadmenu .MoveMenuHeader
@@ -131,7 +131,7 @@ MoveTutorScript:
 .TeachMove:
 	writetext GoldenrodCityMoveTutorIfYouUnderstandYouveMadeItText
 	promptbutton
-	takecoins 400
+	takecoins 500
 	waitsfx
 	playsound SFX_TRANSACTION
 	special DisplayCoinCaseBalance
@@ -494,9 +494,9 @@ GoldenrodCityMoveTutorAskTeachAMoveText:
 	line "new move?"
 	done
 
-GoldenrodCityMoveTutorAsk400CoinsOkayText:
+GoldenrodCityMoveTutorAsk500CoinsOkayText:
 	text "It will cost you"
-	line "400 coins. Okay?"
+	line "500 coins. Okay?"
 	done
 
 GoldenrodCityMoveTutorAwwButTheyreAmazingText:

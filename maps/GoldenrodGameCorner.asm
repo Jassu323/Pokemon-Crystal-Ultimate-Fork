@@ -1,8 +1,8 @@
-GOLDENRODGAMECORNER_TM25_COINS EQU 3000
-GOLDENRODGAMECORNER_TM14_COINS EQU 2000
-GOLDENRODGAMECORNER_TM38_COINS EQU 1000
+GOLDENRODGAMECORNER_TM32_COINS EQU 2500
+GOLDENRODGAMECORNER_TM40_COINS EQU 2500
+GOLDENRODGAMECORNER_TM12_COINS EQU 1000
 GOLDENRODGAMECORNER_CUBONE_COINS    EQU 1500
-GOLDENRODGAMECORNER_SLOWPOKE_COINS  EQU 2800
+GOLDENRODGAMECORNER_CHINCHOU_COINS  EQU 1500
 GOLDENRODGAMECORNER_WOBBUFFET_COINS EQU 9999
 
 	object_const_def
@@ -78,40 +78,40 @@ GoldenrodGameCornerTMVendor_LoopScript:
 .Thunder:
 	checkitem TM_ROCK_TOMB
 	iftrue GoldenrodGameCornerPrizeVendor_AlreadyHaveTMScript
-	checkcoins GOLDENRODGAMECORNER_TM25_COINS
+	checkcoins GOLDENRODGAMECORNER_TM32_COINS
 	ifequal HAVE_LESS, GoldenrodGameCornerPrizeVendor_NotEnoughCoinsScript
 	getitemname STRING_BUFFER_3, TM_ROCK_TOMB
 	scall GoldenrodGameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse GoldenrodGameCornerPrizeVendor_CancelPurchaseScript
 	giveitem TM_ROCK_TOMB
 	iffalse GoldenrodGameCornerPrizeMonVendor_NoRoomForPrizeScript
-	takecoins GOLDENRODGAMECORNER_TM25_COINS
+	takecoins GOLDENRODGAMECORNER_TM32_COINS
 	sjump GoldenrodGameCornerTMVendor_FinishScript
 
 .Blizzard:
 	checkitem TM_ICY_WIND
 	iftrue GoldenrodGameCornerPrizeVendor_AlreadyHaveTMScript
-	checkcoins GOLDENRODGAMECORNER_TM14_COINS
+	checkcoins GOLDENRODGAMECORNER_TM40_COINS
 	ifequal HAVE_LESS, GoldenrodGameCornerPrizeVendor_NotEnoughCoinsScript
 	getitemname STRING_BUFFER_3, TM_ICY_WIND
 	scall GoldenrodGameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse GoldenrodGameCornerPrizeVendor_CancelPurchaseScript
 	giveitem TM_ICY_WIND
 	iffalse GoldenrodGameCornerPrizeMonVendor_NoRoomForPrizeScript
-	takecoins GOLDENRODGAMECORNER_TM14_COINS
+	takecoins GOLDENRODGAMECORNER_TM40_COINS
 	sjump GoldenrodGameCornerTMVendor_FinishScript
 
 .FireBlast:
 	checkitem TM_SWEET_SCENT
 	iftrue GoldenrodGameCornerPrizeVendor_AlreadyHaveTMScript
-	checkcoins GOLDENRODGAMECORNER_TM38_COINS
+	checkcoins GOLDENRODGAMECORNER_TM12_COINS
 	ifequal HAVE_LESS, GoldenrodGameCornerPrizeVendor_NotEnoughCoinsScript
 	getitemname STRING_BUFFER_3, TM_SWEET_SCENT
 	scall GoldenrodGameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse GoldenrodGameCornerPrizeVendor_CancelPurchaseScript
 	giveitem TM_SWEET_SCENT
 	iffalse GoldenrodGameCornerPrizeMonVendor_NoRoomForPrizeScript
-	takecoins GOLDENRODGAMECORNER_TM38_COINS
+	takecoins GOLDENRODGAMECORNER_TM12_COINS
 	sjump GoldenrodGameCornerTMVendor_FinishScript
 
 GoldenrodGameCornerPrizeVendor_ConfirmPurchaseScript:
@@ -164,8 +164,8 @@ GoldenrodGameCornerTMVendorMenuHeader:
 .MenuData:
 	db STATICMENU_CURSOR ; flags
 	db 4 ; items
-	db "TM20    3000@"
-	db "TM40    2000@"
+	db "TM32    2500@"
+	db "TM40    2500@"
 	db "TM12    1000@"
 	db "CANCEL@"
 
@@ -183,7 +183,7 @@ GoldenrodGameCornerPrizeMonVendorScript:
 	verticalmenu
 	closewindow
 	ifequal 1, .Cubone
-	ifequal 2, .Slowpoke
+	ifequal 2, .Chinchou
 	ifequal 3, .Wobbuffet
 	sjump GoldenrodGameCornerPrizeVendor_CancelPurchaseScript
 
@@ -205,22 +205,22 @@ GoldenrodGameCornerPrizeMonVendorScript:
 	takecoins GOLDENRODGAMECORNER_CUBONE_COINS
 	sjump .loop
 
-.Slowpoke:
-	checkcoins GOLDENRODGAMECORNER_SLOWPOKE_COINS
+.Chinchou:
+	checkcoins GOLDENRODGAMECORNER_CHINCHOU_COINS
 	ifequal HAVE_LESS, GoldenrodGameCornerPrizeVendor_NotEnoughCoinsScript
 	readvar VAR_PARTYCOUNT
 	ifequal PARTY_LENGTH, GoldenrodGameCornerPrizeMonVendor_NoRoomForPrizeScript
-	getmonname STRING_BUFFER_3, SLOWPOKE
+	getmonname STRING_BUFFER_3, CHINCHOU
 	scall GoldenrodGameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse GoldenrodGameCornerPrizeVendor_CancelPurchaseScript
 	waitsfx
 	playsound SFX_TRANSACTION
 	writetext GoldenrodGameCornerPrizeVendorHereYouGoText
 	waitbutton
-	setval SLOWPOKE
+	setval CHINCHOU
 	special GameCornerPrizeMonCheckDex
-	givepoke SLOWPOKE, 20
-	takecoins GOLDENRODGAMECORNER_SLOWPOKE_COINS
+	givepoke CHINCHOU, 20
+	takecoins GOLDENRODGAMECORNER_CHINCHOU_COINS
 	sjump .loop
 
 .Wobbuffet:
@@ -251,7 +251,7 @@ GoldenrodGameCornerPrizeMonVendorScript:
 	db STATICMENU_CURSOR ; flags
 	db 4 ; items
 	db "CUBONE     1500@"
-	db "SLOWPOKE   2800@"
+	db "CHINCHOU   1500@"
 	db "WOBBUFFET  9999@"
 	db "CANCEL@"
 
