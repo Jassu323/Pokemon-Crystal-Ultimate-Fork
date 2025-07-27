@@ -41,13 +41,13 @@ SaffronGymSabrinaScript:
 	pause 20
 	opentext
 .FightDone:
-	checkevent EVENT_GOT_TM09_PSYCH_UP
+	checkevent EVENT_GOT_TM09_CALM_MIND
 	iftrue .AfterTM
-	writetext SabrinaPsychUpText
+	writetext SabrinaCalmMindText
 	promptbutton
-	verbosegiveitem TM_PSYCH_UP
+	verbosegiveitem TM_CALM_MIND
 	iffalse .AfterTM
-	setevent EVENT_GOT_TM09_PSYCH_UP
+	setevent EVENT_GOT_TM09_CALM_MIND
 .AfterTM:
 	writetext SabrinaFightDoneText
 	waitbutton
@@ -201,13 +201,13 @@ SabrinaMarshBadgeText:
 	cont "you."
 	done
 	
-SabrinaPsychUpText:
+SabrinaCalmMindText:
 	text "SABRINA: Oh, you"
 	line "should also take"
 	cont "this TM."
 
-	para "It contains PSYCH"
-	line "UP, which boosts"
+	para "It contains CALM"
+	line "MIND, which boosts"
 
 	para "your #MON's"
 	line "SPECIAL stats."

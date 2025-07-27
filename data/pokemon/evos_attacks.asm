@@ -2123,7 +2123,7 @@ MewtwoEvosAttacks:
 	db 1, DISABLE
 	db 11, BARRIER
 	db 22, SWIFT
-	db 33, PSYCH_UP
+	db 33, CALM_MIND
 	db 44, FUTURE_SIGHT
 	db 55, MIST
 	db 66, PSYCHIC_M

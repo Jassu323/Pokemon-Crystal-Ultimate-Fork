@@ -243,7 +243,7 @@ MoveDescriptions::
 	dw SunnyDayDescription
 	dw CrunchDescription
 	dw MirrorCoatDescription
-	dw PsychUpDescription
+	dw CalmMindDescription
 	dw ExtremespeedDescription
 	dw AncientpowerDescription
 	dw ShadowBallDescription
@@ -1233,7 +1233,7 @@ MirrorCoatDescription:
 	db   "Counters a SPCL."
 	next "ATK move double.@"
 
-PsychUpDescription:
+CalmMindDescription:
 	db   "Raises both SPCL."
 	next "ATK and SPCL.DEF.@"
 
@@ -1275,4 +1275,4 @@ RockTombDescription:
 
 GlacialSlamDescription:
 	db   "An icy tackle that"
-	next "hurts the user."
+	next "hurts the user.@"
