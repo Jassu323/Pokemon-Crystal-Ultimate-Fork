@@ -133,8 +133,8 @@ Moves:
 	move MIRROR_MOVE,  EFFECT_MIRROR_MOVE,         0, FLYING,       100, 20,   0
 	move SELFDESTRUCT, EFFECT_SELFDESTRUCT,      200, NORMAL,       100,  1,   0
 	move EGG_BOMB,     EFFECT_BURN_HIT,          100, FIRE,          75, 10,  30
-	move LICK,         EFFECT_PARALYZE_HIT,       20, GHOST,         95, 20,  50
-	move SMOG,         EFFECT_POISON_HIT,         20, POISON,        95, 20,  50
+	move LICK,         EFFECT_PARALYZE_HIT,       25, GHOST,        100, 20,  50
+	move SMOG,         EFFECT_POISON_HIT,         25, POISON,       100, 20,  50
 	move SLUDGE,       EFFECT_POISON_HIT,         65, POISON,       100, 20,  30
 	move BONE_CLUB,    EFFECT_MULTI_HIT,          30, GROUND,        85, 10,   0
 	move FIRE_BLAST,   EFFECT_BURN_HIT,          120, FIRE,          85,  5,  10
@@ -207,7 +207,7 @@ Moves:
 	move FORESIGHT,    EFFECT_FORESIGHT,           0, NORMAL,       100, 40,   0
 	move DESTINY_BOND, EFFECT_DESTINY_BOND,        0, GHOST,        100,  5,   0
 	move PERISH_SONG,  EFFECT_PERISH_SONG,         0, NORMAL,       100,  5,   0
-	move ICY_WIND,     EFFECT_SPEED_DOWN_HIT,     55, ICE,           95, 15, 100
+	move ICY_WIND,     EFFECT_SPEED_DOWN_HIT,     60, ICE,           90, 15, 100
 	move DETECT,       EFFECT_PROTECT,             0, FIGHTING,     100, 20,   0
 	move BONE_RUSH,    EFFECT_PRIORITY_HIT,       60, GROUND,        90, 15,   0
 	move LOCK_ON,      EFFECT_LOCK_ON,             0, NORMAL,       100,  5,   0
@@ -264,4 +264,5 @@ Moves:
 	move WHIRLPOOL,    EFFECT_PRIORITY_HIT,       50, WATER,        100, 10,   0
 	move BEAT_UP,      EFFECT_BEAT_UP,            80, DARK,         100, 15,  20
 	move DRAIN_PUNCH,  EFFECT_LEECH_HIT,          60, FIGHTING,     100, 15,   0
-	move ROCK_TOMB,    EFFECT_SPEED_DOWN_HIT,     60, ROCK,          90, 15,  50
+	move ROCK_TOMB,    EFFECT_SPEED_DOWN_HIT,     60, ROCK,          90, 15, 100
+	move GLACIAL_SLAM, EFFECT_RECOIL_HIT,        100, ICE,          100, 15,   0

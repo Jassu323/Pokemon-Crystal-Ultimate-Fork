@@ -259,6 +259,7 @@
 	const BEAT_UP      ; fb
 	const DRAIN_PUNCH  ; fc
 	const ROCK_TOMB    ; fd
+	const GLACIAL_SLAM ; fe
 	
 NUM_ATTACKS EQU const_value - 1
 

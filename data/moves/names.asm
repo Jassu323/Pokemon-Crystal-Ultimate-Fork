@@ -252,3 +252,4 @@ MoveNames::
 	db "BEAT UP@"
 	db "DRAIN PUNCH@"
 	db "ROCK TOMB@"
+	db "GLACIAL SLAM@"

@@ -254,7 +254,7 @@ BattleAnimations::
 	dw BattleAnim_BeatUp
 	dw BattleAnim_DrainPunch
 	dw BattleAnim_RockTomb
-	dw BattleAnim_254
+	dw BattleAnim_GlacialSlam
 	dw BattleAnim_SweetScent2
 ; $100
 	dw BattleAnim_ThrowPokeBall
@@ -281,8 +281,6 @@ BattleAnimations::
 	dw BattleAnim_HitConfusion
 
 BattleAnim_0:
-BattleAnim_253:
-BattleAnim_254:
 BattleAnim_MirrorMove:
 	anim_ret
 
@@ -3644,30 +3642,20 @@ BattleAnim_PerishSong:
 	anim_ret
 
 BattleAnim_IcyWind:
-	anim_1gfx ANIM_GFX_SPEED
-	anim_bgeffect ANIM_BG_06, $0, $2, $0
-	anim_bgeffect ANIM_BG_ALTERNATE_HUES, $0, $2, $0
-	anim_battlergfx_1row
-	anim_sound 0, 0, SFX_PSYCHIC
-.loop
-	anim_wait 8
-	anim_obj ANIM_OBJ_AE, 64, 88, $4
-	anim_wait 8
-	anim_obj ANIM_OBJ_AE, 64, 80, $4
-	anim_wait 8
-	anim_obj ANIM_OBJ_AE, 64, 96, $4
-	anim_wait 8
-	anim_loop 2, .loop
-	anim_wait 16
-	anim_bgeffect ANIM_BG_BATTLEROBJ_2ROW, $0, $1, $0
-	anim_wait 6
-	anim_bgeffect ANIM_BG_NIGHT_SHADE, $0, $0, $8
-	anim_wait 64
-	anim_incbgeffect ANIM_BG_NIGHT_SHADE
-	anim_bgeffect ANIM_BG_SHOW_MON, $0, $1, $0
-	anim_wait 4
-	anim_incobj 7
-	anim_wait 1
+	anim_1gfx ANIM_GFX_ICE
+	anim_sound 6, 2, SFX_SHINE
+	anim_obj ANIM_OBJ_BLIZZARD, 64, 88, $23
+	anim_wait 2
+	anim_sound 6, 2, SFX_SHINE
+	anim_obj ANIM_OBJ_BLIZZARD, 64, 80, $24
+	anim_wait 2
+	anim_sound 6, 2, SFX_SHINE
+	anim_obj ANIM_OBJ_BLIZZARD, 64, 96, $23
+	anim_wait 2
+	anim_bgeffect ANIM_BG_WHITE_HUES, $0, $8, $0
+	anim_wait 40
+	anim_call BattleAnimSub_Ice
+	anim_wait 32
 	anim_ret
 
 BattleAnim_Detect:
@@ -4695,6 +4683,42 @@ BattleAnim_RockTomb:
 	anim_sound 0, 1, SFX_STRENGTH
 	anim_obj ANIM_OBJ_BIG_ROCK, 136, 68, $30
 	anim_wait 56
+	anim_ret
+
+BattleAnim_GlacialSlam:
+	anim_2gfx ANIM_GFX_ICE, ANIM_GFX_HIT
+	anim_bgeffect ANIM_BG_WHITE_HUES, $0, $8, $0
+	anim_sound 0, 1, SFX_SHINE
+	anim_obj ANIM_OBJ_12, 42, 76, $0
+	anim_wait 6
+	anim_sound 0, 1, SFX_SHINE
+	anim_obj ANIM_OBJ_12, 58, 104, $0
+	anim_wait 6
+	anim_sound 0, 1, SFX_SHINE
+	anim_obj ANIM_OBJ_12, 34, 90, $0
+	anim_wait 6
+	anim_sound 0, 1, SFX_SHINE
+	anim_obj ANIM_OBJ_12, 66, 90, $0
+	anim_wait 6
+	anim_sound 0, 1, SFX_SHINE
+	anim_obj ANIM_OBJ_12, 58, 76, $0
+	anim_wait 6
+	anim_sound 0, 1, SFX_SHINE
+	anim_obj ANIM_OBJ_12, 42, 104, $0
+	anim_wait 28
+	anim_incbgeffect ANIM_BG_WHITE_HUES
+	anim_call BattleAnim_TargetObj_1Row
+	anim_bgeffect ANIM_BG_TACKLE, $0, $1, $0
+	anim_wait 3
+	anim_sound 0, 1, SFX_TACKLE
+	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $4, $2
+	anim_obj ANIM_OBJ_01, 128, 56, $0
+	anim_wait 6
+	anim_sound 0, 1, SFX_TACKLE
+	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $4, $2
+	anim_obj ANIM_OBJ_01, 144, 48, $0
+	anim_wait 3
+	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
 BattleAnimSub_Drain:
