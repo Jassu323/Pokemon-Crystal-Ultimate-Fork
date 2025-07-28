@@ -910,10 +910,13 @@ MoveScreenLoop:
 	hlcoord 1, 11
 	ld bc, 5
 	call ByteFill
+	hlcoord 1, 11
+	lb bc, 5, 7
+	call ClearBox
 	hlcoord 1, 12
 	lb bc, 5, SCREEN_WIDTH - 2
 	call ClearBox
-	hlcoord 1, 12
+	hlcoord 2, 13
 	ld de, String_MoveWhere
 	call PlaceString
 	jp .joy_loop
@@ -946,6 +949,8 @@ MoveScreenLoop:
 	ld a, [wCurPartyMon]
 	cp b
 	jp z, .joy_loop
+	ld de, SFX_SWITCH_POCKETS
+	call PlaySFX
 	jp MoveScreenLoop
 
 .d_left
@@ -960,6 +965,8 @@ MoveScreenLoop:
 	ld a, [wCurPartyMon]
 	cp b
 	jp z, .joy_loop
+	ld de, SFX_SWITCH_POCKETS
+	call PlaySFX
 	jp MoveScreenLoop
 
 .cycle_right
@@ -1085,7 +1092,7 @@ MoveScreenAttributes:
 	db D_UP | D_DOWN | D_LEFT | D_RIGHT | A_BUTTON | B_BUTTON
 
 String_MoveWhere:
-	db "Where?@"
+	db "Select a move <NEXT> to swap places.@"
 
 SetUpMoveScreenBG:
 	call ClearBGPalettes
@@ -1104,8 +1111,8 @@ SetUpMoveScreenBG:
 	ld [wTempIconSpecies], a
 	ld e, MONICON_MOVES
 	farcall LoadMenuMonIcon
-	hlcoord 0, 1
-	ld b, 9
+	hlcoord 0, -1
+	ld b, 1
 	ld c, 18
 	call Textbox
 	hlcoord 0, 11
@@ -1187,11 +1194,82 @@ PlaceMoveData:
 	hlcoord 0, 11
 	ld de, String_MoveType_Bottom
 	call PlaceString
-	hlcoord 12, 12
+	hlcoord 1, 11
 	ld de, String_MoveAtk
 	call PlaceString
-	hlcoord 12, 13
+	hlcoord 1, 12
 	ld de, String_MoveAcc
+	call PlaceString
+	hlcoord 1, 13
+	ld de, String_MoveEff
+	call PlaceString
+
+; Print move category
+
+; Check for Night Shade and Beat Up
+	ld a, [wCurSpecies]
+	dec a
+	ld hl, Moves + MOVE_ANIM
+	ld bc, MOVE_LENGTH
+	call AddNTimes
+	ld a, BANK(Moves)
+	call GetFarByte
+	hlcoord 16, 12
+	cp NIGHT_SHADE
+	jr z, .special_move
+	cp BEAT_UP
+	jr z, .physical_move
+
+
+; Verify if it has power
+	ld a, [wCurSpecies]
+	dec a
+	ld hl, Moves + MOVE_POWER
+	ld bc, MOVE_LENGTH
+	call AddNTimes
+	ld a, BANK(Moves)
+	call GetFarByte
+	hlcoord 16, 12
+	cp 2
+	jr c, .status_move
+
+; Verify if it's physical or special
+	ld a, [wCurSpecies]
+	dec a
+	ld bc, MOVE_LENGTH
+	ld hl, Moves
+	call AddNTimes
+	ld de, wStringBuffer1
+	ld a, BANK(Moves)
+	call FarCopyBytes
+	ld a, [wStringBuffer1 + MOVE_TYPE]
+	cp SPECIAL
+	jr nc, .special_move
+	jr c, .physical_move
+
+.physical_move
+; if PHYSICAL move
+	hlcoord 11, 13
+	ld de, String_MovePhy
+	call PlaceString
+	jr .printed_category
+
+; if SPECIAL move
+.special_move
+	hlcoord 11, 13
+	ld de, String_MoveSpe
+	call PlaceString
+	jr .printed_category
+
+; if STATUS move
+.status_move
+	hlcoord 11, 13
+	ld de, String_MoveSta
+	call PlaceString
+
+.printed_category
+	hlcoord 10, 13
+	ld [hl], "/"
 	call PlaceString
 	
 ; Print move accuracy
@@ -1205,13 +1283,38 @@ PlaceMoveData:
 	ld [wBuffer1], a
 	ld de, wBuffer1
 	lb bc, 1, 3
-	hlcoord 16, 13
+	hlcoord 5, 12
 	call PrintNum
+
+; Print move effecy chance
+	ld a, [wCurSpecies]
+	ld bc, MOVE_LENGTH
+	ld hl, (Moves + MOVE_CHANCE) - MOVE_LENGTH
+	call AddNTimes
+	ld a, BANK(Moves)
+	call GetFarByte
+	cp 1
+	jr c, .if_null_chance
+	Call ConvertPercentages
+	ld [wBuffer1], a
+	ld de, wBuffer1
+	lb bc, 1, 3
+	hlcoord 5, 13
+	call PrintNum
+	jr .skip_null_chance
+
+.if_null_chance
+	ld de, String_MoveNoPower
+	ld bc, 3
+	hlcoord 5, 13
+	call PlaceString
+
+.skip_null_chance
 	
 ; Print move type
 	ld a, [wCurSpecies]
 	ld b, a
-	hlcoord 2, 12
+	hlcoord 10, 12
 	predef PrintMoveType
 	
 ; Print move power
@@ -1222,7 +1325,7 @@ PlaceMoveData:
 	call AddNTimes
 	ld a, BANK(Moves)
 	call GetFarByte
-	hlcoord 16, 12
+	hlcoord 5, 11
 	cp 2
 	jr c, .no_power
 	ld [wDeciramBuffer], a
@@ -1237,7 +1340,7 @@ PlaceMoveData:
 
 ; Print move description
 .description
-	hlcoord 1, 14
+	hlcoord 1, 15
 	predef PrintMoveDescription
 	ld a, $1
 	ldh [hBGMapMode], a
@@ -1261,15 +1364,23 @@ ConvertPercentages:
 
 ; UI elements
 String_MoveType_Top:
-	db "┌─────┐@"
+	db "┌───────┐@"
 String_MoveType_Bottom:
-	db "│TYPE/└@"
+	db "│       └@"
 String_MoveAtk:
 	db "POW/@"
 String_MoveAcc:
 	db "ACC/@"
+String_MoveEff:
+	db "EFF/@"
 String_MoveNoPower:
 	db "---@"
+String_MovePhy:
+	db "PHYSICAL@"
+String_MoveSpe:
+	db "SPECIAL @"
+String_MoveSta:
+	db "STATUS  @"
 
 PlaceMoveScreenArrows:
 	call PlaceMoveScreenLeftArrow
