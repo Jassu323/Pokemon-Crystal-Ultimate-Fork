@@ -112,7 +112,7 @@ Moves:
 	move QUICK_ATTACK, EFFECT_PRIORITY_HIT,       45, NORMAL,       100, 30,   0
 	move RAGE,         EFFECT_RAGE,               30, NORMAL,       100, 20,   0
 	move TELEPORT,     EFFECT_TELEPORT,            0, PSYCHIC_TYPE, 100, 20,   0
-	move NIGHT_SHADE,  EFFECT_NIGHT_SHADE,        80, GHOST,        100, 10,   0
+	move NIGHT_SHADE,  EFFECT_NIGHT_SHADE,        80, GHOST,        100, 10,  10
 	move HURRICANE,    EFFECT_HURRICANE,         120, FLYING,        70, 10,  30
 	move SCREECH,      EFFECT_DEFENSE_DOWN_2,      0, NORMAL,        85, 40,   0
 	move DOUBLE_TEAM,  EFFECT_EVASION_UP,          0, NORMAL,       100, 15,   0

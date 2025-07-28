@@ -2163,6 +2163,7 @@ NightShade:
 	stab
 	damagevariation
 	checkhit
+	effectchance
 	moveanim
 	failuretext
 	applydamage
@@ -2171,6 +2172,8 @@ NightShade:
 	checkfaint
 	buildopponentrage
 	kingsrock
+	specialdefensedown
+	statdownmessage
 	endmove
 
 BeatUp:
