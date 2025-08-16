@@ -3062,7 +3062,7 @@ SlugmaEvosAttacks:
 	db 22, SPIKES
 	db 29, RECOVER
 	db 36, LAVA_PLUME
-	db 43, ACID_ARMOR
+	db 43, FIRE_SPIN
 	db 50, FLAMETHROWER
 	db 0 ; no more level-up moves
 
@@ -3074,7 +3074,7 @@ MagcargoEvosAttacks:
 	db 22, SPIKES
 	db 29, RECOVER
 	db 38, LAVA_PLUME
-	db 47, ACID_ARMOR
+	db 47, FIRE_SPIN
 	db 56, FLAMETHROWER
 	db 0 ; no more level-up moves
 
