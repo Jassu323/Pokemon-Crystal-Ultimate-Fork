@@ -747,6 +747,7 @@ SlugmaEggMoves:
 	db DISABLE
 	db WILL_O_WISP
 	db SMOKESCREEN
+	db SELFDESTRUCT
 	db EXPLOSION
 	db -1 ; end
 
