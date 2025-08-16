@@ -1735,7 +1735,7 @@ BattleCommand_CheckHit:
 	cp THUNDER
 	ret z
 	cp TWISTER
-	ret
+	ret z
 	cp HURRICANE
 	ret
 
@@ -1776,8 +1776,11 @@ BattleCommand_CheckHit:
 	ld a, BATTLE_VARS_MOVE_EFFECT
 	call GetBattleVar
 	cp EFFECT_THUNDER
+	jr z, .weather_check
+	cp EFFECT_HURRICANE
 	ret nz
 
+.weather_check
 	ld a, [wBattleWeather]
 	cp WEATHER_RAIN
 	ret

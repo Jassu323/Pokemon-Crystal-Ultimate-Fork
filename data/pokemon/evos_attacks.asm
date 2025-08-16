@@ -1928,7 +1928,7 @@ FlareonEvosAttacks:
 	db 38, LIGHT_SCREEN
 	db 43, SEISMIC_TOSS
 	db 48, SUNNY_DAY
-	db 53, FLAMETHROWER
+	db 53, LAVA_PLUME
 	db 0 ; no more level-up moves
 
 PorygonEvosAttacks:
@@ -2208,7 +2208,7 @@ CyndaquilEvosAttacks:
 	db 15, QUICK_ATTACK
 	db 21, FLAME_WHEEL
 	db 28, SUBMISSION
-	db 36, FLAMETHROWER
+	db 36, LAVA_PLUME
 	db 0 ; no more level-up moves
 
 QuilavaEvosAttacks:
@@ -2221,7 +2221,7 @@ QuilavaEvosAttacks:
 	db 17, QUICK_ATTACK
 	db 23, FLAME_WHEEL
 	db 32, SUBMISSION
-	db 42, FLAMETHROWER
+	db 42, LAVA_PLUME
 	db 0 ; no more level-up moves
 
 TyphlosionEvosAttacks:
@@ -2233,7 +2233,7 @@ TyphlosionEvosAttacks:
 	db 17, QUICK_ATTACK
 	db 23, FLAME_WHEEL
 	db 32, SUBMISSION
-	db 45, FLAMETHROWER
+	db 45, LAVA_PLUME
 	db 60, THRASH
 	db 0 ; no more level-up moves
 
@@ -3062,9 +3062,9 @@ SlugmaEvosAttacks:
 	db 15, ROCK_THROW
 	db 22, SPIKES
 	db 29, RECOVER
-	db 36, FLAMETHROWER
+	db 36, LAVA_PLUME
 	db 43, ACID_ARMOR
-	db 50, FIRE_BLAST
+	db 50, FLAMETHROWER
 	db 0 ; no more level-up moves
 
 MagcargoEvosAttacks:
@@ -3074,9 +3074,9 @@ MagcargoEvosAttacks:
 	db 15, ROCK_THROW
 	db 22, SPIKES
 	db 29, RECOVER
-	db 38, FLAMETHROWER
+	db 38, LAVA_PLUME
 	db 47, ACID_ARMOR
-	db 56, FIRE_BLAST
+	db 56, FLAMETHROWER
 	db 0 ; no more level-up moves
 
 SwinubEvosAttacks:
@@ -3428,9 +3428,9 @@ EnteiEvosAttacks:
 	db 21, ROAR
 	db 31, FIRE_SPIN
 	db 41, STOMP
-	db 51, FLAMETHROWER
+	db 51, LAVA_PLUME
 	db 61, DOUBLE_EDGE
-	db 71, SACRED_FIRE
+	db 71, FIRE_BLAST
 	db 0 ; no more level-up moves
 
 SuicuneEvosAttacks:
