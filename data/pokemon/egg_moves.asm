@@ -476,7 +476,7 @@ CyndaquilEggMoves:
 	db REVERSAL
 	db THRASH
 	db FORESIGHT
-	db FIRE_SPIN
+	db WILL_O_WISP
 	db -1 ; end
 
 TotodileEggMoves:
@@ -793,7 +793,7 @@ SkarmoryEggMoves:
 	db -1 ; end
 
 HoundourEggMoves:
-	db AGILITY
+	db FIRE_SPIN
 	db RAGE
 	db PURSUIT
 	db COUNTER

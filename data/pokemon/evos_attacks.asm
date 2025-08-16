@@ -74,11 +74,11 @@ CharmanderEvosAttacks:
 	db 7, EMBER
 	db 13, SMOKESCREEN
 	db 17, RAGE
-	db 23, SCARY_FACE
+	db 23, FIRE_SPIN
 	db 29, SLASH
 	db 35, FLAMETHROWER
 	db 41, DRAGON_RAGE
-	db 47, FIRE_SPIN
+	db 47, WILL_O_WISP
 	db 0 ; no more level-up moves
 
 CharmeleonEvosAttacks:
@@ -89,11 +89,11 @@ CharmeleonEvosAttacks:
 	db 7, EMBER
 	db 13, SMOKESCREEN
 	db 18, RAGE
-	db 25, SCARY_FACE
+	db 25, FIRE_SPIN
 	db 32, SLASH
 	db 39, FLAMETHROWER
 	db 46, DRAGON_RAGE
-	db 53, FIRE_SPIN
+	db 53, WILL_O_WISP
 	db 0 ; no more level-up moves
 
 CharizardEvosAttacks:
@@ -104,13 +104,13 @@ CharizardEvosAttacks:
 	db 7, EMBER
 	db 13, SMOKESCREEN
 	db 18, RAGE
-	db 25, SCARY_FACE
+	db 25, FIRE_SPIN
 	db 32, SLASH
 	db 36, WING_ATTACK
 	db 42, FLAMETHROWER
 	db 48, BELLY_DRUM
 	db 53, DRAGON_RAGE
-	db 64, FIRE_SPIN
+	db 64, WILL_O_WISP
 	db 0 ; no more level-up moves
 
 SquirtleEvosAttacks:
@@ -516,7 +516,7 @@ VulpixEvosAttacks:
 	db 25, FLAME_WHEEL
 	db 31, HYPNOSIS
 	db 37, FLAMETHROWER
-	db 43, FIRE_SPIN
+	db 43, WILL_O_WISP
 	db 49, DREAM_EATER
 	db 0 ; no more level-up moves
 
@@ -528,7 +528,7 @@ NinetalesEvosAttacks:
 	db 1, FLAME_WHEEL
 	db 1, HYPNOSIS
 	db 43, FLAMETHROWER
-	db 49, FIRE_SPIN
+	db 49, WILL_O_WISP
 	db 55, DREAM_EATER
 	db 62, NIGHT_SHADE
 	db 0 ; no more level-up moves
@@ -1527,7 +1527,7 @@ KoffingEvosAttacks:
 	db 33, SCREECH
 	db 41, EXPLOSION
 	db 45, DESTINY_BOND
-	db 49, FIRE_SPIN
+	db 49, WILL_O_WISP
 	db 0 ; no more level-up moves
 
 WeezingEvosAttacks:
@@ -1542,7 +1542,7 @@ WeezingEvosAttacks:
 	db 33, SCREECH
 	db 44, EXPLOSION
 	db 51, DESTINY_BOND
-	db 58, FIRE_SPIN
+	db 58, WILL_O_WISP
 	db 0 ; no more level-up moves
 
 RhyhornEvosAttacks:
@@ -1924,10 +1924,10 @@ FlareonEvosAttacks:
 	db 18, QUICK_ATTACK
 	db 23, FLAME_WHEEL
 	db 28, REFLECT
-	db 33, FIRE_SPIN
+	db 33, WILL_O_WISP
 	db 38, LIGHT_SCREEN
-	db 43, SEISMIC_TOSS
-	db 48, SUNNY_DAY
+	db 43, FIRE_SPIN
+	db 48, SEISMIC_TOSS
 	db 53, LAVA_PLUME
 	db 0 ; no more level-up moves
 
@@ -2040,11 +2040,11 @@ ArticunoEvosAttacks:
 	db 1, GUST
 	db 1, POWDER_SNOW
 	db 13, MIST
-	db 25, AGILITY
+	db 25, ICY_WIND
 	db 37, AIR_CUTTER
 	db 49, ICE_BEAM
 	db 61, REFLECT
-	db 73, BLIZZARD
+	db 73, BLIZZARD ; Change to Hurricane
 	db 0 ; no more level-up moves
 
 ZapdosEvosAttacks:
@@ -2056,19 +2056,19 @@ ZapdosEvosAttacks:
 	db 37, DETECT
 	db 49, DRILL_PECK
 	db 61, LIGHT_SCREEN
-	db 73, THUNDER
+	db 73, THUNDER ; Change to Hurricane
 	db 0 ; no more level-up moves
 
 MoltresEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, WING_ATTACK
 	db 1, EMBER
-	db 13, FIRE_SPIN
-	db 25, AGILITY
+	db 13, WILL_O_WISP
+	db 25, FIRE_SPIN
 	db 37, AIR_CUTTER
 	db 49, FLAMETHROWER
 	db 61, SAFEGUARD
-	db 73, SKY_ATTACK
+	db 73, SKY_ATTACK ; Change to Hurricane
 	db 0 ; no more level-up moves
 
 DratiniEvosAttacks:
@@ -2288,7 +2288,6 @@ SentretEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 5, DEFENSE_CURL
-	db 10, FIRE_SPIN
 	db 11, QUICK_ATTACK
 	db 17, FURY_SWIPES
 	db 25, SLAM
@@ -2565,7 +2564,7 @@ BellossomEvosAttacks:
 	db 1, LEECH_SEED
 	db 1, STUN_SPORE
 	db 44, PETAL_DANCE
-	db 55, FIRE_SPIN
+	db 55, WILL_O_WISP
 	db 66, PAIN_SPLIT
 	db 0 ; no more level-up moves
 
@@ -2701,7 +2700,7 @@ SunfloraEvosAttacks:
 	db 24, LEECH_SEED
 	db 31, RAZOR_LEAF
 	db 43, PETAL_DANCE
-	db 56, FIRE_SPIN
+	db 56, WILL_O_WISP
 	db 63, SOLARBEAM
 	db 0 ; no more level-up moves
 
@@ -2822,7 +2821,7 @@ MisdreavusEvosAttacks:
 	db 36, PAIN_SPLIT
 	db 36, HYPNOSIS
 	db 46, NIGHT_SHADE
-	db 57, FIRE_SPIN
+	db 57, WILL_O_WISP
 	db 68, PERISH_SONG
 	db 0 ; no more level-up moves
 
@@ -3198,7 +3197,7 @@ HoundourEvosAttacks:
 	db 7, ROAR
 	db 13, SMOG
 	db 20, BITE
-	db 27, FIRE_SPIN
+	db 27, WILL_O_WISP
 	db 35, FLAMETHROWER
 	db 43, CRUNCH
 	db 0 ; no more level-up moves
@@ -3210,7 +3209,7 @@ HoundoomEvosAttacks:
 	db 7, ROAR
 	db 13, SMOG
 	db 20, BITE
-	db 30, FIRE_SPIN
+	db 30, WILL_O_WISP
 	db 41, FLAMETHROWER
 	db 52, CRUNCH
 	db 0 ; no more level-up moves
@@ -3426,7 +3425,7 @@ EnteiEvosAttacks:
 	db 1, LEER
 	db 11, FLAME_WHEEL
 	db 21, ROAR
-	db 31, FIRE_SPIN
+	db 31, WILL_O_WISP
 	db 41, STOMP
 	db 51, LAVA_PLUME
 	db 61, DOUBLE_EDGE
@@ -3554,7 +3553,7 @@ GhostEvosAttacks:
 	db 21, FALSE_SWIPE
 	db 25, HEADBUTT
 	db 32, BONEMERANG
-	db 39, FIRE_SPIN
+	db 39, WILL_O_WISP
 	db 46, ROCK_SLIDE
 	db 53, BONE_RUSH
 	db 0 ; no more level-up moves
