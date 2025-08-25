@@ -157,7 +157,6 @@ MeowthEggMoves:
 PsyduckEggMoves:
 	db AURORA_BEAM
 	db HYPNOSIS
-	db MEGA_PUNCH
 	db MACH_PUNCH
 	db LIGHT_SCREEN
 	db FUTURE_SIGHT
@@ -243,6 +242,9 @@ SlowpokeEggMoves:
 	db MIST
 	db FUTURE_SIGHT
 	db STOMP
+	db BUBBLEBEAM
+	db BELLY_DRUM
+	db BODY_SLAM
 	db -1 ; end
 
 FarfetchDEggMoves:
@@ -391,6 +393,7 @@ HorseaEggMoves:
 GoldeenEggMoves:
 	db PSYBEAM
 	db HAZE
+	db CONFUSE_RAY
 	db HYDRO_PUMP
 	db -1 ; end
 
@@ -434,7 +437,7 @@ OmanyteEggMoves:
 
 KabutoEggMoves:
 	db HYDRO_PUMP
-	db MEGA_DRAIN
+	db METAL_CLAW
 	db RAPID_SPIN
 	db CONFUSE_RAY
 	db TAKE_DOWN
