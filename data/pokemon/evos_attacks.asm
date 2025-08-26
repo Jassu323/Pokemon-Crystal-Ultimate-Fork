@@ -1339,13 +1339,16 @@ OnixEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, SCREECH
+	db 5, HARDEN
 	db 10, ROCK_THROW
-	db 14, HARDEN
+	db 14, MAGNITUDE
+	db 19, ROCK_TOMB
 	db 23, RAGE
 	db 27, BIND
 	db 36, SANDSTORM
 	db 40, SLAM
 	db 49, ROCK_SLIDE
+	db 58, EARTHQUAKE
 	db 0 ; no more level-up moves
 
 DrowzeeEvosAttacks:
@@ -2635,11 +2638,12 @@ AzumarillEvosAttacks:
 SudowoodoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, FLAIL
+	db 1, HARDEN
 	; db 1, MIMIC
 	db 10, ROCK_THROW
-	db 17, LOW_KICK
-	db 25, LEECH_SEED
-	db 33, BIND
+	db 17, LEECH_SEED
+	db 25, ROCK_TOMB
+	db 33, LOW_KICK
 	db 41, SLAM
 	db 49, ROCK_SLIDE
 	db 57, SYNTHESIS
@@ -2957,14 +2961,17 @@ SteelixEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, SCREECH
+	db 5, HARDEN
 	db 10, ROCK_THROW
-	db 14, HARDEN
+	db 14, MAGNITUDE
+	db 19, ROCK_TOMB
 	db 23, RAGE
 	db 27, BIND
 	db 36, SANDSTORM
 	db 40, SLAM
 	db 49, ROCK_SLIDE
-	db 59, SKULL_BASH
+	db 58, EARTHQUAKE
+	db 67, SKULL_BASH
 	db 0 ; no more level-up moves
 
 SnubbullEvosAttacks:
