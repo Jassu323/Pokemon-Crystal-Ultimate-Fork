@@ -231,7 +231,7 @@ PidgeyEvosAttacks:
 	db 29, WHIRLWIND
 	db 36, AGILITY
 	db 43, MIRROR_MOVE
-	db 50, SKY_ATTACK
+	db 50, HURRICANE
 	db 57, BATON_PASS
 	db 0 ; no more level-up moves
 
@@ -246,7 +246,7 @@ PidgeottoEvosAttacks:
 	db 31, WHIRLWIND
 	db 39, AGILITY
 	db 47, MIRROR_MOVE
-	db 55, SKY_ATTACK
+	db 55, HURRICANE
 	db 63, BATON_PASS
 	db 0 ; no more level-up moves
 
@@ -261,7 +261,7 @@ PidgeotEvosAttacks:
 	db 36, AIR_CUTTER
 	db 40, AGILITY
 	db 49, MIRROR_MOVE
-	db 58, SKY_ATTACK
+	db 58, HURRICANE
 	db 67, BATON_PASS
 	db 0 ; no more level-up moves
 
@@ -1289,6 +1289,7 @@ CloysterEvosAttacks:
 	db 41, SPIKE_CANNON
 	db 49, SPIKES
 	db 57, RAPID_SPIN
+	db 65, GLACIAL_SLAM
 	db 0 ; no more level-up moves
 
 GastlyEvosAttacks:
@@ -1840,26 +1841,26 @@ TaurosEvosAttacks:
 	db 0 ; no more level-up moves
 
 MagikarpEvosAttacks:
-	db EVOLVE_LEVEL, 30, GYARADOS
+	db EVOLVE_LEVEL, 20, GYARADOS
 	db 0 ; no more evolutions
 	db 1, SPLASH
 	db 10, TACKLE
-	db 20, FLAIL
+	db 15, FLAIL
 	db 0 ; no more level-up moves
 
 GyaradosEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 30, BITE
-	db 35, TWISTER
-	db 40, LEER
-	db 45, DRAGON_RAGE
-	db 50, RAIN_DANCE
-	db 55, THRASH
-	db 60, CRUNCH
-	db 65, OUTRAGE
-	db 70, HYDRO_PUMP
-	db 75, HYPER_BEAM
+	db 20, BITE
+	db 25, TWISTER
+	db 30, BODY_SLAM
+	db 35, DRAGON_RAGE
+	db 40, CRUNCH
+	db 45, THRASH
+	db 50, HYDRO_PUMP
+	db 55, GLACIAL_SLAM
+	db 60, HYPER_BEAM
+	db 65, RAIN_DANCE
 	db 0 ; no more level-up moves
 
 LaprasEvosAttacks:
@@ -2076,7 +2077,8 @@ ArticunoEvosAttacks:
 	db 37, AIR_CUTTER
 	db 49, ICE_BEAM
 	db 61, REFLECT
-	db 73, BLIZZARD ; Change to Hurricane
+	db 73, BLIZZARD
+	db 85, HURRICANE
 	db 0 ; no more level-up moves
 
 ZapdosEvosAttacks:
@@ -2085,10 +2087,11 @@ ZapdosEvosAttacks:
 	db 1, THUNDERSHOCK
 	db 13, THUNDER_WAVE
 	db 25, AGILITY
-	db 37, DETECT
-	db 49, DRILL_PECK
+	db 37, DRILL_PECK
+	db 49, THUNDERBOLT
 	db 61, LIGHT_SCREEN
-	db 73, THUNDER ; Change to Hurricane
+	db 73, THUNDER
+	db 85, HURRICANE
 	db 0 ; no more level-up moves
 
 MoltresEvosAttacks:
@@ -2100,7 +2103,8 @@ MoltresEvosAttacks:
 	db 37, AIR_CUTTER
 	db 49, FLAMETHROWER
 	db 61, SAFEGUARD
-	db 73, SKY_ATTACK ; Change to Hurricane
+	db 73, FIRE_BLAST
+	db 85, HURRICANE
 	db 0 ; no more level-up moves
 
 DratiniEvosAttacks:
@@ -2146,7 +2150,8 @@ DragoniteEvosAttacks:
 	db 55, AIR_CUTTER
 	db 61, OUTRAGE
 	db 70, HYPER_BEAM
-	db 79, MEGA_KICK
+	db 79, HURRICANE
+	db 88, MEGA_KICK
 	db 0 ; no more level-up moves
 
 MewtwoEvosAttacks:
@@ -3122,12 +3127,12 @@ SwinubEvosAttacks:
 	db 7, POWDER_SNOW
 	db 10, RAGE
 	db 13, MUD_SLAP
-	db 19, MAGNITUDE
-	db 25, ENDURE
+	db 19, ICY_WIND
+	db 25, MAGNITUDE
 	db 31, BODY_SLAM
 	db 37, MIST
 	db 43, EARTHQUAKE
-	db 49, BLIZZARD
+	db 49, SLAM
 	db 55, SKULL_BASH
 	db 0 ; no more level-up moves
 
@@ -3139,13 +3144,13 @@ PiloswineEvosAttacks:
 	db 7, POWDER_SNOW
 	db 10, RAGE
 	db 13, MUD_SLAP
-	db 19, MAGNITUDE
-	db 25, ENDURE
+	db 19, ICY_WIND
+	db 25, MAGNITUDE
 	db 28, HORN_ATTACK
 	db 33, BODY_SLAM
 	db 41, MIST
 	db 49, EARTHQUAKE
-	db 57, BLIZZARD
+	db 57, GLACIAL_SLAM
 	db 65, SKULL_BASH
 	db 73, MEGAHORN
 	db 0 ; no more level-up moves
@@ -3536,6 +3541,7 @@ LugiaEvosAttacks:
 	db 1, HYDRO_PUMP
 	db 1, MOONLIGHT
 	db 1, GUST
+	db 1, HURRICANE
 	db 11, RAIN_DANCE
 	db 22, SWIFT
 	db 33, WHIRLWIND
@@ -3552,6 +3558,7 @@ HoOhEvosAttacks:
 	db 1, FIRE_BLAST
 	db 1, MORNING_SUN
 	db 1, GUST
+	db 1, HURRICANE
 	db 11, SUNNY_DAY
 	db 22, SWIFT
 	db 33, WHIRLWIND

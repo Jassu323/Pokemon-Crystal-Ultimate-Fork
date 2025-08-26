@@ -61,6 +61,7 @@ SpearowEggMoves:
 	db SCARY_FACE
 	db QUICK_ATTACK
 	db TRI_ATTACK
+	db HURRICANE
 	db -1 ; end
 
 EkansEggMoves:
@@ -87,6 +88,7 @@ NidoranFEggMoves:
 	db CHARM
 	db COUNTER
 	db BEAT_UP
+	db GLACIAL_SLAM
 	db -1 ; end
 
 NidoranMEggMoves:
@@ -97,6 +99,7 @@ NidoranMEggMoves:
 	db AMNESIA
 	db COUNTER
 	db BEAT_UP
+	db GLACIAL_SLAM
 	db -1 ; end
 
 VulpixEggMoves:
@@ -162,6 +165,7 @@ PsyduckEggMoves:
 	db FUTURE_SIGHT
 	db PSYCHIC_M
 	db ROCK_SLIDE
+	db GLACIAL_SLAM
 	db -1 ; end
 
 MankeyEggMoves:
@@ -506,6 +510,7 @@ HoothootEggMoves:
 	db PSYCHIC_M
 	db WHIRLWIND
 	db SKY_ATTACK
+	db HURRICANE
 	db -1 ; end
 
 LedybaEggMoves:
@@ -538,6 +543,7 @@ PichuEggMoves:
 	db ENCORE
 	db BODY_SLAM
 	db METAL_CLAW
+	db GLACIAL_SLAM
 	db -1 ; end
 
 CleffaEggMoves:
@@ -647,6 +653,7 @@ WooperEggMoves:
 	db BODY_SLAM
 	db ANCIENTPOWER
 	db SAFEGUARD
+	db GLACIAL_SLAM
 	db -1 ; end
 
 MurkrowEggMoves:
@@ -700,7 +707,7 @@ SnubbullEggMoves:
 	db METRONOME
 	db FAINT_ATTACK
 	db REFLECT
-	db PRESENT
+	db GLACIAL_SLAM
 	db CRUNCH
 	db THUNDER_WAVE
 	db LIGHT_SCREEN
@@ -743,6 +750,7 @@ TeddiursaEggMoves:
 	db FOCUS_ENERGY
 	db VITAL_THROW
 	db METAL_CLAW
+	db GLACIAL_SLAM
 	db -1 ; end
 
 SlugmaEggMoves:
@@ -815,6 +823,7 @@ PhanpyEggMoves:
 	db ROCK_THROW
 	db ANCIENTPOWER
 	db QUICK_ATTACK
+	db GLACIAL_SLAM
 	db -1 ; end
 
 StantlerEggMoves:
