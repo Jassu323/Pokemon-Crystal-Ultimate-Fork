@@ -31,7 +31,7 @@ Moves:
 	move WING_ATTACK,  EFFECT_NORMAL_HIT,         60, FLYING,       100, 35,   0
 	move WHIRLWIND,    EFFECT_FORCE_SWITCH,        0, FLYING,       100, 20,   0
 	move FLY,          EFFECT_FLY,                80, FLYING,        95, 15,   0
-	move BIND,         EFFECT_TRAP_TARGET,        35, NORMAL,        85, 15, 100
+	move BIND,         EFFECT_TRAP_TARGET,        35, ROCK,          85, 15,   0
 	move SLAM,         EFFECT_PARALYZE_HIT,      100, NORMAL,        90, 15,  30
 	move VINE_WHIP,    EFFECT_NORMAL_HIT,         45, GRASS,        100, 25,   0
 	move STOMP,        EFFECT_STOMP,              65, NORMAL,       100, 20,  30
