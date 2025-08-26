@@ -31,7 +31,7 @@ Moves:
 	move WING_ATTACK,  EFFECT_NORMAL_HIT,         60, FLYING,       100, 35,   0
 	move WHIRLWIND,    EFFECT_FORCE_SWITCH,        0, FLYING,       100, 20,   0
 	move FLY,          EFFECT_FLY,                80, FLYING,        95, 15,   0
-	move BIND,         EFFECT_EVASION_DOWN_HIT,   60, ROCK,          95, 15,  75
+	move BIND,         EFFECT_TRAP_TARGET,        35, ROCK,          85, 15,   0
 	move SLAM,         EFFECT_PARALYZE_HIT,      100, NORMAL,        90, 15,  30
 	move VINE_WHIP,    EFFECT_NORMAL_HIT,         45, GRASS,        100, 25,   0
 	move STOMP,        EFFECT_STOMP,              65, NORMAL,       100, 20,  30
@@ -139,11 +139,11 @@ Moves:
 	move BONE_CLUB,    EFFECT_MULTI_HIT,          30, GROUND,        85, 10,   0
 	move FIRE_BLAST,   EFFECT_BURN_HIT,          120, FIRE,          85,  5,  10
 	move WATERFALL,    EFFECT_FLINCH_HIT,         80, WATER,        100, 15,  20
-	move CLAMP,        EFFECT_EVASION_DOWN_HIT,   65, WATER,        100, 15,  75
+	move CLAMP,        EFFECT_EVASION_DOWN_HIT,   60, WATER,         90, 15, 100
 	move SWIFT,        EFFECT_ALWAYS_HIT,         60, NORMAL,       100, 20,   0
 	move SKULL_BASH,   EFFECT_SKULL_BASH,        150, STEEL,         95,  5,   0
 	move SPIKE_CANNON, EFFECT_MULTI_HIT,          25, STEEL,        100, 10,   0
-	move CONSTRICT,    EFFECT_SPEED_DOWN_HIT,     65, GRASS,         95, 15,  50
+	move CONSTRICT,    EFFECT_SPEED_DOWN_HIT,     60, NORMAL,        90, 15, 100
 	move AMNESIA,      EFFECT_SP_DEF_UP_2,         0, PSYCHIC_TYPE, 100, 20,   0
 	move KINESIS,      EFFECT_ACCURACY_DOWN_2,     0, PSYCHIC_TYPE,  80,  5,   0
 	move SOFTBOILED,   EFFECT_HEAL,                0, NORMAL,       100, 10,   0
@@ -178,7 +178,7 @@ Moves:
 	move SUBSTITUTE,   EFFECT_SUBSTITUTE,          0, NORMAL,       100, 10,   0
 	move STRUGGLE,     EFFECT_RECOIL_HIT,         50, NORMAL,       100,  1,   0
 	move SKETCH,       EFFECT_SKETCH,              0, NORMAL,       100,  1,   0
-	move TRIPLE_KICK,  EFFECT_TRIPLE_KICK,        28, FIGHTING,      95, 10,   0
+	move TRIPLE_KICK,  EFFECT_TRIPLE_KICK,        18, FIGHTING,      90, 10,   0
 	move THIEF,        EFFECT_THIEF,              60, DARK,         100, 15, 100
 	move SPIDER_WEB,   EFFECT_MEAN_LOOK,           0, BUG,          100, 10,   0
 	move MIND_READER,  EFFECT_LOCK_ON,             0, NORMAL,       100,  5,   0
