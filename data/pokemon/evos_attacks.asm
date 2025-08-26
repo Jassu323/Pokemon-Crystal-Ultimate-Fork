@@ -3132,7 +3132,7 @@ SwinubEvosAttacks:
 	db 31, BODY_SLAM
 	db 37, MIST
 	db 43, EARTHQUAKE
-	db 49, SLAM
+	db 49, GLACIAL_SLAM
 	db 55, SKULL_BASH
 	db 0 ; no more level-up moves
 
