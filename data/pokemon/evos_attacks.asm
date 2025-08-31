@@ -409,14 +409,15 @@ SandslashEvosAttacks:
 NidoranFEvosAttacks:
 	db EVOLVE_LEVEL, 16, NIDORINA
 	db 0 ; no more evolutions
-	db 1, GROWL	
+	db 1, GROWL
 	db 1, SCRATCH
 	db 8, POISON_STING
 	db 12, DOUBLE_KICK
 	db 17, HORN_ATTACK
 	db 23, LOVELY_KISS
-	db 30, BITE
-	db 38, BODY_SLAM
+	db 30, STOMP
+	db 37, BODY_SLAM
+	db 44, CRUNCH
 	db 0 ; no more level-up moves
 
 NidorinaEvosAttacks:
@@ -426,10 +427,11 @@ NidorinaEvosAttacks:
 	db 1, SCRATCH
 	db 8, POISON_STING
 	db 12, DOUBLE_KICK
-	db 19, HORN_ATTACK
-	db 27, LOVELY_KISS
-	db 36, BITE
-	db 46, BODY_SLAM
+	db 18, HORN_ATTACK
+	db 25, LOVELY_KISS
+	db 33, STOMP
+	db 41, BODY_SLAM
+	db 49, CRUNCH
 	db 0 ; no more level-up moves
 
 NidoqueenEvosAttacks:
@@ -438,8 +440,11 @@ NidoqueenEvosAttacks:
 	db 1, SCRATCH
 	db 1, DOUBLE_KICK
 	db 1, LOVELY_KISS
-	db 33, BODY_SLAM
-	db 42, MOONLIGHT
+	db 35, BODY_SLAM
+	db 43, DOUBLE_EDGE
+	db 51, EARTHQUAKE
+	db 59, SKULL_BASH
+	db 67, DYNAMICPUNCH
 	db 0 ; no more level-up moves
 
 NidoranMEvosAttacks:
@@ -447,12 +452,14 @@ NidoranMEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, LEER
 	db 1, TACKLE
+	db 1, FURY_ATTACK
 	db 8, POISON_STING
 	db 12, DOUBLE_KICK
 	db 17, HORN_ATTACK
 	db 23, LOVELY_KISS
-	db 30, FURY_ATTACK
-	; db 38, HORN_DRILL
+	db 30, SLASH
+	db 37, BODY_SLAM
+	db 44, MEGAHORN
 	db 0 ; no more level-up moves
 
 NidorinoEvosAttacks:
@@ -460,12 +467,14 @@ NidorinoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, LEER
 	db 1, TACKLE
+	db 1, FURY_ATTACK
 	db 8, POISON_STING
 	db 12, DOUBLE_KICK
-	db 19, HORN_ATTACK
-	db 27, LOVELY_KISS
-	db 36, FURY_ATTACK
-	; db 46, HORN_DRILL
+	db 18, HORN_ATTACK
+	db 25, LOVELY_KISS
+	db 33, SLASH
+	db 41, BODY_SLAM
+	db 49, MEGAHORN
 	db 0 ; no more level-up moves
 
 NidokingEvosAttacks:
@@ -474,8 +483,11 @@ NidokingEvosAttacks:
 	db 1, HORN_ATTACK
 	db 1, DOUBLE_KICK
 	db 1, LOVELY_KISS
+	db 1, DIZZY_PUNCH
 	db 43, THRASH
-	; db 52, HORN_DRILL
+	db 51, EARTHQUAKE
+	db 59, MEGAHORN
+	db 67, DYNAMICPUNCH
 	db 0 ; no more level-up moves
 
 ClefairyEvosAttacks:
@@ -698,7 +710,7 @@ DiglettEvosAttacks:
 	db 33, SLASH
 	db 41, EARTHQUAKE
 	db 45, BEAT_UP
-	; db 49, FISSURE
+	db 50, ROCK_SLIDE
 	db 57, SWORDS_DANCE
 	db 0 ; no more level-up moves
 
@@ -713,7 +725,7 @@ DugtrioEvosAttacks:
 	db 35, SLASH
 	db 45, EARTHQUAKE
 	db 50, BEAT_UP
-	; db 55, FISSURE
+	db 56, ROCK_SLIDE
 	db 60, SWORDS_DANCE
 	db 0 ; no more level-up moves
 
@@ -876,6 +888,7 @@ PoliwrathEvosAttacks:
 	db 44, SUBMISSION
 	db 51, BELLY_DRUM
 	db 58, HYDRO_PUMP
+	db 65, DYNAMICPUNCH
 	db 0 ; no more level-up moves
 
 AbraEvosAttacks:
@@ -898,6 +911,7 @@ KadabraEvosAttacks:
 	db 39, FUTURE_SIGHT
 	db 43, PSYCHIC_M
 	db 51, REFLECT
+	db 60, THUNDER_WAVE
 	db 0 ; no more level-up moves
 
 AlakazamEvosAttacks:
@@ -927,6 +941,7 @@ MachopEvosAttacks:
 	db 37, SUBMISSION
 	db 43, SCARY_FACE
 	db 49, CROSS_CHOP
+	db 55, DYNAMICPUNCH
 	db 0 ; no more level-up moves
 
 MachokeEvosAttacks:
@@ -942,6 +957,7 @@ MachokeEvosAttacks:
 	db 43, SUBMISSION
 	db 52, SCARY_FACE
 	db 61, CROSS_CHOP
+	db 70, DYNAMICPUNCH
 	db 0 ; no more level-up moves
 
 MachampEvosAttacks:
@@ -956,6 +972,7 @@ MachampEvosAttacks:
 	db 43, SUBMISSION
 	db 52, SCARY_FACE
 	db 61, CROSS_CHOP
+	db 70, DYNAMICPUNCH
 	db 0 ; no more level-up moves
 
 BellsproutEvosAttacks:
@@ -1084,16 +1101,16 @@ PonytaEvosAttacks:
 
 RapidashEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, HI_JUMP_KICK
 	db 1, TACKLE
 	db 1, EMBER
+	db 1, FLAMETHROWER
 	db 4, GROWL
 	db 8, TAIL_WHIP
 	db 13, FLAME_WHEEL
 	db 19, STOMP
 	db 26, FIRE_SPIN
 	db 34, TAKE_DOWN
-	; db 40, HORN_DRILL
+	db 40, HI_JUMP_KICK
 	db 47, MEGAHORN
 	db 57, FIRE_BLAST
 	db 67, EXTREMESPEED
@@ -1304,6 +1321,7 @@ GastlyEvosAttacks:
 	db 28, DESTINY_BOND
 	db 33, DREAM_EATER
 	db 41, NIGHT_SHADE
+	db 49, PERISH_SONG
 	db 0 ; no more level-up moves
 
 HaunterEvosAttacks:
@@ -1318,6 +1336,7 @@ HaunterEvosAttacks:
 	db 31, DESTINY_BOND
 	db 39, DREAM_EATER
 	db 48, NIGHT_SHADE
+	db 57, PERISH_SONG
 	db 0 ; no more level-up moves
 
 GengarEvosAttacks:
@@ -1329,6 +1348,7 @@ GengarEvosAttacks:
 	db 16, CURSE
 	db 21, CONFUSE_RAY
 	db 32, DESTINY_BOND
+	db 36, DYNAMICPUNCH
 	db 41, DREAM_EATER
 	db 52, NIGHT_SHADE
 	db 66, PERISH_SONG
@@ -1517,6 +1537,7 @@ HitmonchanEvosAttacks:
 	db 38, MACH_PUNCH
 	db 44, AGILITY
 	db 50, COUNTER
+	db 56, DYNAMICPUNCH
 	db 0 ; no more level-up moves
 
 LickitungEvosAttacks:
@@ -1572,7 +1593,7 @@ RhyhornEvosAttacks:
 	db 13, STOMP
 	db 19, MAGNITUDE
 	db 25, SCARY_FACE
-	; db 31, HORN_DRILL
+	db 31, BODY_SLAM
 	db 37, ROCK_SLIDE
 	db 49, EARTHQUAKE
 	db 55, MEGAHORN
@@ -1585,8 +1606,9 @@ RhydonEvosAttacks:
 	db 13, STOMP
 	db 19, MAGNITUDE
 	db 25, SCARY_FACE
-	; db 31, HORN_DRILL
+	db 31, BODY_SLAM
 	db 37, ROCK_SLIDE
+	db 42, DYNAMICPUNCH
 	db 51, EARTHQUAKE
 	db 61, MEGAHORN
 	db 0 ; no more level-up moves
@@ -1759,7 +1781,6 @@ ScytherEvosAttacks:
 	db 24, WING_ATTACK
 	db 30, DOUBLE_TEAM
 	db 36, SLASH
-	db 39, AIR_CUTTER
 	db 42, SWORDS_DANCE
 	db 48, AGILITY
 	db 54, BATON_PASS
@@ -1823,9 +1844,10 @@ PinsirEvosAttacks:
 	db 13, FURY_CUTTER
 	db 19, SEISMIC_TOSS
 	db 25, VICEGRIP
-	; db 31, GUILLOTINE
+	db 31, BIND
 	db 37, SUBMISSION
-	db 43, SWORDS_DANCE
+	db 43, BEAT_UP
+	db 49, SWORDS_DANCE
 	db 55, MEGAHORN
 	db 0 ; no more level-up moves
 
@@ -1837,7 +1859,7 @@ TaurosEvosAttacks:
 	db 13, HORN_ATTACK
 	db 19, SCARY_FACE
 	db 26, STOMP
-	; db 34, HORN_DRILL
+	db 34, BODY_SLAM
 	db 43, THRASH
 	db 53, TAKE_DOWN
 	db 64, MEGAHORN
@@ -2831,8 +2853,10 @@ MurkrowEvosAttacks:
 	db 1, PECK
 	db 11, FAINT_ATTACK
 	db 16, HAZE
+	db 21, WING_ATTACK
 	db 26, MEAN_LOOK
 	db 31, PURSUIT
+	db 36, THIEF
 	db 41, NIGHT_SHADE
 	db 46, BEAT_UP
 	db 56, SKY_ATTACK
@@ -2954,7 +2978,7 @@ GligarEvosAttacks:
 	db 41, AIR_CUTTER
 	db 48, SCREECH
 	db 55, EARTHQUAKE
-	; db 62, GUILLOTINE
+	db 62, SWORDS_DANCE
 	db 0 ; no more level-up moves
 
 SteelixEvosAttacks:
@@ -3040,6 +3064,7 @@ ShuckleEvosAttacks:
 	db 28, BIDE
 	db 37, BATON_PASS
 	db 46, SPIDER_WEB
+	db 55, ROCK_SLIDE
 	db 0 ; no more level-up moves
 
 HeracrossEvosAttacks:
@@ -3066,8 +3091,8 @@ SneaselEvosAttacks:
 	db 33, ICE_PUNCH
 	db 41, METAL_CLAW
 	db 49, SLASH
-	db 57, SWORDS_DANCE
-	db 65, BEAT_UP
+	db 57, BEAT_UP
+	db 65, SWORDS_DANCE
 	db 0 ; no more level-up moves
 
 TeddiursaEvosAttacks:
