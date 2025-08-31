@@ -224,7 +224,7 @@ __tmhm_value__ = __tmhm_value__ + 1
 ENDM
 
 ; see data/moves/tmhm_moves.asm for moves
-	add_tm DYNAMICPUNCH ; bf TM01
+	add_tm DRAIN_PUNCH ; bf TM01
 	add_tm HEADBUTT     ; c0 TM02
 	add_tm CURSE        ; c1 TM03
 	add_tm ROLLOUT      ; c2 TM04

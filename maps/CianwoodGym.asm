@@ -52,7 +52,7 @@ CianwoodGymChuckScript:
 	readvar VAR_BADGES
 	scall CianwoodGymActivateRockets
 .FightDone:
-	checkevent EVENT_GOT_TM01_DYNAMICPUNCH
+	checkevent EVENT_GOT_TM01_DRAIN_PUNCH
 	iftrue .AlreadyGotTM
 	setevent EVENT_BEAT_BLACKBELT_YOSHI
 	setevent EVENT_BEAT_BLACKBELT_LAO
@@ -60,9 +60,9 @@ CianwoodGymChuckScript:
 	setevent EVENT_BEAT_BLACKBELT_LUNG
 	writetext ChuckExplainBadgeText
 	promptbutton
-	verbosegiveitem TM_DYNAMICPUNCH
+	verbosegiveitem TM_DRAIN_PUNCH
 	iffalse .BagFull
-	setevent EVENT_GOT_TM01_DYNAMICPUNCH
+	setevent EVENT_GOT_TM01_DRAIN_PUNCH
 	writetext ChuckExplainTMText
 	waitbutton
 	closetext
@@ -219,14 +219,14 @@ ChuckExplainBadgeText:
 	done
 
 ChuckExplainTMText:
-	text "That is DYNAMIC-"
+	text "That is DRAIN"
 	line "PUNCH."
 
-	para "It doesn't always"
-	line "hit, but when it"
+	para "It doesn't hit"
+	line "hard, but it"
 
-	para "does, it causes"
-	line "confusion!"
+	para "heals half the"
+	line "damage it causes!"
 	done
 
 ChuckAfterText:
