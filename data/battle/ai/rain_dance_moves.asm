@@ -13,4 +13,6 @@ RainDanceMoves:
 	db OCTAZOOKA
 	db MOONLIGHT
 	db WHIRLPOOL
+	db WATER_PULSE
+	db HURRICANE
 	db -1 ; end

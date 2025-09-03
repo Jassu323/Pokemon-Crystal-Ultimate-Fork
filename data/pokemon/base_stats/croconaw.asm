@@ -1,6 +1,6 @@
 	db CROCONAW ; 159
 
-	db  65,  60,  85,  60,  85,  65
+	db  65,  65,  85,  60,  80,  65
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type

@@ -136,8 +136,8 @@ TrainerBikerGryphon:
 	closetext
 	end
 	
-TrainerCooltrainermChrist:
-	trainer COOLTRAINERM, CHRIST, EVENT_BEAT_COOLTRAINERM_CHRIST, CooltrainermChrisSeenText, CooltrainermChrisBeatenText, 0, .Script
+TrainerCooltrainermChris:
+	trainer COOLTRAINERM, CHRIS, EVENT_BEAT_COOLTRAINERM_CHRIS, CooltrainermChrisSeenText, CooltrainermChrisBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -437,7 +437,7 @@ VictoryRoad_MapEvents:
 	object_event 18, 13, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_RIVAL_VICTORY_ROAD
 	object_event 12, 52, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerBlackbeltBob, -1
 	object_event 19, 39, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GRAY, OBJECTTYPE_TRAINER, 1, TrainerBikerGryphon, -1
-	object_event 10, 17, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerCooltrainermChrist, -1
+	object_event 10, 17, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerCooltrainermChris, -1
 	object_event  7, 34, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSuperNerdBrady, -1
 	object_event  0, 49, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 5, TrainerSwimmerfClaire, -1
 	object_event  9, 38, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VictoryRoadBoulder, -1

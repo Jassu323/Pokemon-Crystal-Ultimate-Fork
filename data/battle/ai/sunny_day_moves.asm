@@ -13,4 +13,5 @@ SunnyDayMoves:
 	db SACRED_FIRE
 	db MORNING_SUN
 	db SYNTHESIS
+	db LAVA_PLUME
 	db -1 ; end
