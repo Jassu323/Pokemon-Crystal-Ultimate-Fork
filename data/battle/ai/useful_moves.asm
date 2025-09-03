@@ -20,4 +20,5 @@ UsefulMoves:
 	db FIRE_BLAST
 	db SOFTBOILED
 	db SUPER_FANG
+	db WILL_O_WISP
 	db -1 ; end

@@ -218,7 +218,7 @@ KRIS EQU __trainer_class__
 	const KEVIN
 	const ALLEN
 	const DARIN
-	const CHRIST
+	const CRIS
 	const CALLUM
 
 	trainerclass COOLTRAINERF ; 1c
